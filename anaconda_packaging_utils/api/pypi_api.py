@@ -6,16 +6,17 @@ Description:    Library that provides tooling for pulling information from the p
 """
 
 
-import dataclasses
 import datetime
 import logging
 import traceback
+from dataclasses import dataclass
 from typing import Final, no_type_check
 
 import requests
 from jsonschema import validate as schema_validate
 
 import anaconda_packaging_utils.cryptography.utils as crypto_utils
+from anaconda_packaging_utils.api.types import BaseApiException
 from anaconda_packaging_utils.types import JsonType, SchemaType
 
 # Logging object for this module
@@ -27,7 +28,7 @@ BASE_URL: Final[str] = "https://pypi.python.org/pypi"
 HTTP_REQ_TIMEOUT: Final[int] = 60
 
 
-@dataclasses.dataclass(frozen=True)
+@dataclass(frozen=True)
 class VersionMetadata:
     """
     Represents information stored in the object found in the "urls" or "releases/<version>" keys. This block contains
@@ -82,7 +83,7 @@ class VersionMetadata:
         }
 
 
-@dataclasses.dataclass(frozen=True)
+@dataclass(frozen=True)
 class PackageInfo:
     """
     Represents information stored in the "info"-keyed object found in both GET request types.
@@ -186,7 +187,7 @@ class PackageInfo:
         return base
 
 
-@dataclasses.dataclass
+@dataclass
 class PackageMetadata:
     """
     Class that represents all the metadata about a Package
@@ -196,21 +197,12 @@ class PackageMetadata:
     releases: dict[str, VersionMetadata]  # version -> metadata
 
 
-class ApiException(Exception):
+class ApiException(BaseApiException):
     """
-    Generic exception indicating an unrecoverable failure of this API.
-
-    This exception is meant to condense many possible failures into one generic error. The thinking is, if the calling
-    code runs into any API failure, there isn't much that can be done. So it is easier for the caller to handle one
-    exception than many exception types.
+    Indicates an exception occurred with this API.
     """
 
-    def __init__(self, message: str):
-        """
-        Constructs an API exception
-        :param message: String description of the issue encountered.
-        """
-        super().__init__(message if len(message) else "An unknown API issue was encountered.")
+    pass
 
 
 def _calc_package_metadata_url(package: str) -> str:

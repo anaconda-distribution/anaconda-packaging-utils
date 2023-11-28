@@ -14,6 +14,7 @@ from github import Github, Repository
 from percy.render.recipe import Recipe
 
 import anaconda_packaging_utils.cryptography.utils as crypto_utils
+from anaconda_packaging_utils.api.types import BaseApiException
 from anaconda_packaging_utils.storage import file_io
 from anaconda_packaging_utils.storage.config_data import ConfigData
 
@@ -26,21 +27,12 @@ ANACONDA_RECIPE_BASE: Final[str] = "AnacondaRecipes"
 REPO_AGGREGATE_PATH: Final[str] = f"{ANACONDA_RECIPE_BASE}/aggregate"
 
 
-class ApiException(Exception):
+class ApiException(BaseApiException):
     """
-    Generic exception indicating an unrecoverable failure of this API.
-
-    This exception is meant to condense many possible failures into one generic error. The thinking is, if the calling
-    code runs into any API failure, there isn't much that can be done. So it is easier for the caller to handle one
-    exception than many exception types.
+    Indicates an exception occurred with this API.
     """
 
-    def __init__(self, message: str):
-        """
-        Constructs an API exception
-        :param message: String description of the issue encountered.
-        """
-        super().__init__(message if len(message) else "An unknown API issue was encountered.")
+    pass
 
 
 class GitHubApi:
