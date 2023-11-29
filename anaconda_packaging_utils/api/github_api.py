@@ -14,7 +14,7 @@ from github import Github, Repository
 from percy.render.recipe import Recipe
 
 import anaconda_packaging_utils.cryptography.utils as crypto_utils
-from anaconda_packaging_utils.api.types import BaseApiException
+from anaconda_packaging_utils.api._types import BaseApiException
 from anaconda_packaging_utils.storage import file_io
 from anaconda_packaging_utils.storage.config_data import ConfigData
 
@@ -97,7 +97,7 @@ class GitHubApi:
             if sha is not None and not crypto_utils.is_valid_sha1(sha):
                 log.warning("Received invalid SHA from `%s`: %s", package, sha)
                 sha = None
-        except Exception as e:  # pylint: disable=W0718
+        except Exception as e:  # pylint: disable=broad-exception-caught
             log.warning(
                 "Failed to acquire SHA of `%s` from `aggregate`," " with exception %s",
                 package,

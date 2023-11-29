@@ -1,0 +1,120 @@
+{
+  "info": {
+    "subdir": "linux-ppc64le"
+  },
+  "packages": {
+    "numpy-1.17.0-py36h99e49ec_0.tar.bz2": {
+      "build": "py36h99e49ec_0",
+      "build_number": 0,
+      "depends": [
+        "blas * openblas",
+        "libgcc-ng >=7.3.0",
+        "libgfortran-ng >=7,<8.0a0",
+        "libopenblas >=0.3.3,<1.0a0",
+        "numpy-base 1.17.0 py36h2f8d375_0",
+        "python >=3.6,<3.7.0a0"
+      ],
+      "license": "BSD 3-Clause",
+      "md5": "7f2e208659632b0ab3265ec0b716cd53",
+      "name": "numpy",
+      "sha256": "20dd8eac12b3e65dfc1b497124a449692d7cf14ad3a66422cd404de5759141fd",
+      "size": 24408,
+      "subdir": "linux-ppc64le",
+      "timestamp": 1566409811705,
+      "version": "1.17.0"
+    },
+    "numpy-1.17.0-py37h99e49ec_0.tar.bz2": {
+      "build": "py37h99e49ec_0",
+      "build_number": 0,
+      "depends": [
+        "blas * openblas",
+        "libgcc-ng >=7.3.0",
+        "libgfortran-ng >=7,<8.0a0",
+        "libopenblas >=0.3.3,<1.0a0",
+        "numpy-base 1.17.0 py37h2f8d375_0",
+        "python >=3.7,<3.8.0a0"
+      ],
+      "license": "BSD 3-Clause",
+      "md5": "6a5b9b2abd4bea66a4a921a8120d90d8",
+      "name": "numpy",
+      "sha256": "fd48404d107a08649bfdce302e72d049b595892af7fb4c562c572669d6518c29",
+      "size": 24357,
+      "subdir": "linux-ppc64le",
+      "timestamp": 1566409808149,
+      "version": "1.17.0"
+    },
+    "numpy-base-1.17.0-py36h2f8d375_0.tar.bz2": {
+      "build": "py36h2f8d375_0",
+      "build_number": 0,
+      "depends": [
+        "blas * openblas",
+        "libgcc-ng >=7.3.0",
+        "libgfortran-ng >=7,<8.0a0",
+        "libopenblas >=0.3.3,<1.0a0",
+        "python >=3.6,<3.7.0a0"
+      ],
+      "md5": "4720b024f1dac280618c13d903b85025",
+      "name": "numpy-base",
+      "sha256": "3f58f2f8a110f6df17178d5d9844d677e54c9dd0b02e91d47026ffa2d66a00a2",
+      "size": 5627245,
+      "subdir": "linux-ppc64le",
+      "timestamp": 1566409795879,
+      "version": "1.17.0"
+    },
+    "numpy-base-1.17.0-py37h2f8d375_0.tar.bz2": {
+      "build": "py37h2f8d375_0",
+      "build_number": 0,
+      "depends": [
+        "blas * openblas",
+        "libgcc-ng >=7.3.0",
+        "libgfortran-ng >=7,<8.0a0",
+        "libopenblas >=0.3.3,<1.0a0",
+        "python >=3.7,<3.8.0a0"
+      ],
+      "md5": "43dd2deabbcfd539ff2ac58113fb3c0f",
+      "name": "numpy-base",
+      "sha256": "5dd1a008c756712d76c0849636fd74f7704d03b0db39e492a1435c2b60f5fc78",
+      "size": 5575151,
+      "subdir": "linux-ppc64le",
+      "timestamp": 1566409793749,
+      "version": "1.17.0"
+    },
+    "numpy-devel-1.17.0-py36h008b2eb_0.tar.bz2": {
+      "build": "py36h008b2eb_0",
+      "build_number": 0,
+      "depends": [
+        "blas * openblas",
+        "libopenblas >=0.3.3,<1.0a0",
+        "numpy-base 1.17.0 py36h2f8d375_0",
+        "python >=3.6,<3.7.0a0"
+      ],
+      "md5": "2e84aa39977340fe4bc5508b143281ea",
+      "name": "numpy-devel",
+      "sha256": "17064c7593b8a82d3ae6f58387e2b3a954cc5244bbd513afe9ea7522485c898c",
+      "size": 22687,
+      "subdir": "linux-ppc64le",
+      "timestamp": 1566409821107,
+      "version": "1.17.0"
+    },
+    "numpy-devel-1.17.0-py37h008b2eb_0.tar.bz2": {
+      "build": "py37h008b2eb_0",
+      "build_number": 0,
+      "depends": [
+        "blas * openblas",
+        "libopenblas >=0.3.3,<1.0a0",
+        "numpy-base 1.17.0 py37h2f8d375_0",
+        "python >=3.7,<3.8.0a0"
+      ],
+      "md5": "5567bed2bceebd872088192f03beaaf2",
+      "name": "numpy-devel",
+      "sha256": "7540d9f5649c185d528c720051e5728408710aa4bfa86936cb6b338ac7e6c039",
+      "size": 22683,
+      "subdir": "linux-ppc64le",
+      "timestamp": 1566409816586,
+      "version": "1.17.0"
+    }
+  },
+  "packages.conda": {},
+  "removed": [],
+  "repodata_version": 1
+}

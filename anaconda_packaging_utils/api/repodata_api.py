@@ -4,18 +4,23 @@ Description:    Library that provides tooling for pulling and parsing `repodata.
 """
 
 
+import logging
 from dataclasses import dataclass
 from enum import Enum
 from typing import Final, Optional
 
-from anaconda_packaging_utils.api.types import BaseApiException
-from anaconda_packaging_utils.types import SchemaType
+from anaconda_packaging_utils.api._types import BaseApiException
+from anaconda_packaging_utils.api._utils import make_request_and_validate
+from anaconda_packaging_utils.types import JsonType, SchemaType
 
 # from jsonschema import validate as schema_validate
 
 
 # https://repo.anaconda.com/pkgs/mfain/noarch/repodata.json
 # channel / <architecture>
+
+# Logging object for this module
+log = logging.getLogger(__name__)
 
 
 class Channel(str, Enum):

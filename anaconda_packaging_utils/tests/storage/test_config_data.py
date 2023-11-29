@@ -127,4 +127,4 @@ def test_caching() -> None:
         data1 = ConfigData(file_path)
         assert mock_file.call_count == 1
         # The addresses of these tables should be the same, as these tables are the same static cache.
-        assert id(data0._config_tbl) == id(data1._config_tbl)  # pylint: disable=W0212
+        assert id(data0._config_tbl) == id(data1._config_tbl)  # pylint: disable=protected-access
