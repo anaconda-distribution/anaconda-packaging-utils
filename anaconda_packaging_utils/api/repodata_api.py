@@ -57,7 +57,7 @@ class Architecture(str, Enum):
     NO_ARCH = "noarch"
 
 
-_BASE_REPODATA_URL: Final[str] = "https://repo.anaconda.com/pkgs/"
+_BASE_REPODATA_URL: Final[str] = "https://repo.anaconda.com/pkgs"
 
 # Maps the available architectures per channel hosted on `repo.anaconda.com`
 _SUPPORTED_CHANNEL_ARCH: Final[dict[Channel, set[Architecture]]] = {
@@ -157,8 +157,8 @@ class RepodataMetadata:
     # Required fields
     subdir: str
     # Optional fields
-    arch: Optional[str]
-    platform: Optional[str]
+    arch: Optional[str] = None
+    platform: Optional[str] = None
 
 
 @dataclass
@@ -175,13 +175,13 @@ class PackageData:
     sha256: str
     name: str
     size: int
-    timestamp: int
     version: str
     # Optional fields
-    date: Optional[str]
-    track_features: Optional[str]
-    license: Optional[str]
-    license_family: Optional[str]
+    timestamp: Optional[int] = None
+    date: Optional[str] = None
+    track_features: Optional[str] = None
+    license: Optional[str] = None
+    license_family: Optional[str] = None
 
 
 @dataclass
@@ -209,24 +209,74 @@ _REPODATA_JSON_SCHEMA: Final[SchemaType] = {
             },
         },
         "packages": {
-            "required": ["build", "build_number", "depends", "md5", "sha256", "name", "size", "timestamp", "version"],
-            "properties": {
-                "build": {"type": "string"},
-                "build_number": {"type": "integer"},
-                "depends": {"type": "array", "items": {"type": "string"}},
-                "md5": {"type": "string"},
-                "sha256": {"type": "string"},
-                "name": {"type": "string"},
-                "size": {"type": "integer"},
-                "timestamp": {"type": "string"},
-                "version": {"type": "string"},
-                "date": {"type": "string"},
-                "track_features": {"type": "string"},
-                "license": {"type": "string"},
-                "license_family": {"type": "string"},
-            },
+            "additionalProperties": {
+                "type": "object",
+                "required": [
+                    "build",
+                    "build_number",
+                    "depends",
+                    "md5",
+                    "sha256",
+                    "name",
+                    "size",
+                    "version",
+                ],
+                "properties": {
+                    "build": {"type": "string"},
+                    "build_number": {"type": "integer"},
+                    "depends": {"type": "array", "items": {"type": "string"}},
+                    "md5": {"type": "string"},
+                    "sha256": {"type": "string"},
+                    "name": {"type": "string"},
+                    "size": {"type": "integer"},
+                    "timestamp": {"type": "integer"},
+                    "version": {"type": "string"},
+                    "date": {"type": "string"},
+                    "track_features": {"type": "string"},
+                    "license": {"type": ["string", "null"]},
+                    "license_family": {"type": ["string", "null"]},
+                },
+            }
         },
         "removed": {"type": "array", "items": {"type": "string"}},
         "repodata_version": {"type": "integer"},
     },
 }
+
+
+def _calc_request_url(channel: Channel, arch: Architecture) -> str:
+    """
+    Calculates the URL to the target `repodata.json` blob.
+    :param channel: Target publishing channel.
+    :param arch: Target package architecture. Some older reference material calls this "subdir"
+    :raises ApiException: If the target channel and architecture are not supported
+    :return: URL to the repodata JSON blob of interest.
+    """
+    if channel not in _SUPPORTED_CHANNEL_ARCH:
+        raise ApiException(f"Requested package channel is not supported: {channel}")
+    if arch not in _SUPPORTED_CHANNEL_ARCH[channel]:
+        raise ApiException(f"Requested architecture `{arch}` is not supported by this channel: {channel}")
+    return f"{_BASE_REPODATA_URL}/{channel}/{arch}/repodata.json"
+
+
+def fetch_repodata(channel: Channel, arch: Architecture) -> Repodata:
+    """
+    Fetches and parses a `repodata.json` blob into a data structure
+    :param channel: Target publishing channel.
+    :param arch: Target package architecture. Some older reference material calls this "subdir"
+    :raises ApiException: If the target channel and architecture are not supported or HTTP request failed.
+    :return: Serialized form of the `repodata.json` structure.
+    """
+    request_url: Final[str] = _calc_request_url(channel, arch)
+    response_json: JsonType
+    try:
+        response_json = make_request_and_validate(
+            request_url,
+            _REPODATA_JSON_SCHEMA,
+            log,
+        )
+    except BaseApiException as e:
+        raise ApiException(e.message) from e
+    # TODO complete
+    # TODO handle NULLable license fields
+    return Repodata(RepodataMetadata("linux-64"), {}, [], 0)

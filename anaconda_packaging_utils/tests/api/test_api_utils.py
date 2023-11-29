@@ -12,10 +12,9 @@ import pytest
 from anaconda_packaging_utils.api._types import BaseApiException
 from anaconda_packaging_utils.api._utils import check_for_empty_field, make_request_and_validate
 from anaconda_packaging_utils.api.pypi_api import PackageInfo
-from anaconda_packaging_utils.tests.testing_utils import TEST_FILES_PATH, load_json_file
+from anaconda_packaging_utils.tests.testing_utils import MOCK_BASE_URL, TEST_FILES_PATH, load_json_file
 
 TEST_PYPI_FILES: Final[str] = f"{TEST_FILES_PATH}/pypi_api"
-TEST_BASE_URL: Final[str] = "https://fake.website.com"
 
 
 @no_type_check
@@ -30,7 +29,7 @@ def test_make_request_and_validate_get_package() -> None:
         mock_get.return_value.json.return_value = response_json
         assert (
             make_request_and_validate(  # pylint: disable=protected-access
-                f"{TEST_BASE_URL}/scipy/json",
+                f"{MOCK_BASE_URL}/scipy/json",
                 PackageInfo.get_schema(True),
             )
             == response_json
@@ -49,7 +48,7 @@ def test_make_request_and_validate_get_package_version() -> None:
         mock_get.return_value.json.return_value = response_json
         assert (
             make_request_and_validate(  # pylint: disable=protected-access
-                f"{TEST_BASE_URL}/scipy/1.11.1/json",
+                f"{MOCK_BASE_URL}/scipy/1.11.1/json",
                 PackageInfo.get_schema(False),
             )
             == response_json
@@ -68,7 +67,7 @@ def test_make_request_and_validate_bad_http_response() -> None:
         mock_get.return_value.json.return_value = load_json_file(f"{TEST_PYPI_FILES}/valid_get_package_version.json")
         with pytest.raises(BaseApiException):
             make_request_and_validate(  # pylint: disable=protected-access
-                f"{TEST_BASE_URL}/scipy/1.11.1/json",
+                f"{MOCK_BASE_URL}/scipy/1.11.1/json",
                 PackageInfo.get_schema(False),
             )
 
@@ -76,7 +75,7 @@ def test_make_request_and_validate_bad_http_response() -> None:
         mock_get.return_value = None
         with pytest.raises(BaseApiException):
             make_request_and_validate(  # pylint: disable=protected-access
-                f"{TEST_BASE_URL}/scipy/1.11.1/json",
+                f"{MOCK_BASE_URL}/scipy/1.11.1/json",
                 PackageInfo.get_schema(False),
             )
 
@@ -93,7 +92,7 @@ def test_make_request_and_validate_bad_http_content() -> None:
         mock_get.return_value.json.return_value = load_json_file(f"{TEST_PYPI_FILES}/valid_get_package_version.json")
         with pytest.raises(BaseApiException):
             make_request_and_validate(  # pylint: disable=protected-access
-                f"{TEST_BASE_URL}/scipy/1.11.1/json",
+                f"{MOCK_BASE_URL}/scipy/1.11.1/json",
                 PackageInfo.get_schema(False),
             )
 
@@ -101,7 +100,7 @@ def test_make_request_and_validate_bad_http_content() -> None:
         mock_get.return_value.headers = {"content-type": "text/html"}
         with pytest.raises(BaseApiException):
             make_request_and_validate(  # pylint: disable=protected-access
-                f"{TEST_BASE_URL}/scipy/1.11.1/json",
+                f"{MOCK_BASE_URL}/scipy/1.11.1/json",
                 PackageInfo.get_schema(False),
             )
 
@@ -110,7 +109,7 @@ def test_make_request_and_validate_bad_http_content() -> None:
         mock_get.return_value.json.return_value = "bad: json"
         with pytest.raises(BaseApiException):
             make_request_and_validate(  # pylint: disable=protected-access
-                f"{TEST_BASE_URL}/scipy/1.11.1/json",
+                f"{MOCK_BASE_URL}/scipy/1.11.1/json",
                 PackageInfo.get_schema(False),
             )
 
@@ -129,7 +128,7 @@ def test_make_request_and_validate_bad_schema() -> None:
         mock_get.return_value.json.return_value = response_json
         with pytest.raises(BaseApiException):
             make_request_and_validate(  # pylint: disable=protected-access
-                f"{TEST_BASE_URL}/scipy/json",
+                f"{MOCK_BASE_URL}/scipy/json",
                 PackageInfo.get_schema(True),
             )
 

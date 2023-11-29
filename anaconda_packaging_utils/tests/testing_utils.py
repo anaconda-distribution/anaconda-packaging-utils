@@ -4,11 +4,15 @@ Description:    Contains constants and other utilities used throughout the unit 
 """
 import json
 from pathlib import Path
+from typing import Final
 
 from anaconda_packaging_utils.types import JsonType
 
 # Path to supplementary files used in test cases
 TEST_FILES_PATH = "anaconda_packaging_utils/tests/test_aux_files"
+
+# Fake URL to use when a real URL is mocked.
+MOCK_BASE_URL: Final[str] = "https://mock.website.com"
 
 
 def load_json_file(file: Path | str) -> JsonType:
