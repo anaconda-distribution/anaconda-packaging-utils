@@ -7,7 +7,7 @@ Description:    Library that provides tooling for pulling and parsing `repodata.
 import logging
 from dataclasses import dataclass
 from enum import Enum
-from typing import Final, Optional
+from typing import Final, Optional, cast
 
 from anaconda_packaging_utils.api._types import BaseApiException
 from anaconda_packaging_utils.api._utils import make_request_and_validate
@@ -259,6 +259,16 @@ def _calc_request_url(channel: Channel, arch: Architecture) -> str:
     return f"{_BASE_REPODATA_URL}/{channel}/{arch}/repodata.json"
 
 
+def _serialize_repodata(response_json: JsonType) -> Repodata:
+    # Casts should be very safe as we must have passed JSON schema validation by this point.
+    # TODO complete
+    # TODO handle NULLable license fields
+
+    metadata = RepodataMetadata("linux-64")
+
+    return Repodata(metadata, {}, cast(list[str], response_json["removed"]), int(response_json["repodata_version"]))
+
+
 def fetch_repodata(channel: Channel, arch: Architecture) -> Repodata:
     """
     Fetches and parses a `repodata.json` blob into a data structure
@@ -277,6 +287,5 @@ def fetch_repodata(channel: Channel, arch: Architecture) -> Repodata:
         )
     except BaseApiException as e:
         raise ApiException(e.message) from e
-    # TODO complete
-    # TODO handle NULLable license fields
-    return Repodata(RepodataMetadata("linux-64"), {}, [], 0)
+
+    return _serialize_repodata(response_json)
