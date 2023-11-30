@@ -17,6 +17,9 @@ PRIMITIVES_TUPLE: Final[tuple[type[str], type[int], type[float], type[bool], typ
 
 # Type that represents a JSON-like type
 JsonType = Union[dict[str, "JsonType"], list["JsonType"], Primitives]
+# Represents a JSON object structure. Casting to this on a validated JSON object should alleviate static analyzer
+# index errors.
+JsonObjectType = dict[str, JsonType]
 
 # Types that build up to types used in `jsonschema`s
 SchemaPrimitives = Union[str, int, bool, None]

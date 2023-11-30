@@ -10,8 +10,8 @@ from enum import Enum
 from typing import Final, Optional, cast
 
 from anaconda_packaging_utils.api._types import BaseApiException
-from anaconda_packaging_utils.api._utils import make_request_and_validate
-from anaconda_packaging_utils.types import JsonType, SchemaType
+from anaconda_packaging_utils.api._utils import init_optional_int, init_optional_str, make_request_and_validate
+from anaconda_packaging_utils.types import JsonObjectType, JsonType, SchemaType
 
 # from jsonschema import validate as schema_validate
 
@@ -176,6 +176,7 @@ class PackageData:
     name: str
     size: int
     version: str
+    subdir: str
     # Optional fields
     timestamp: Optional[int] = None
     date: Optional[str] = None
@@ -220,6 +221,7 @@ _REPODATA_JSON_SCHEMA: Final[SchemaType] = {
                     "name",
                     "size",
                     "version",
+                    "subdir",
                 ],
                 "properties": {
                     "build": {"type": "string"},
@@ -231,6 +233,7 @@ _REPODATA_JSON_SCHEMA: Final[SchemaType] = {
                     "size": {"type": "integer"},
                     "timestamp": {"type": "integer"},
                     "version": {"type": "string"},
+                    "subdir": {"type": "string"},
                     "date": {"type": "string"},
                     "track_features": {"type": "string"},
                     "license": {"type": ["string", "null"]},
@@ -250,7 +253,7 @@ def _calc_request_url(channel: Channel, arch: Architecture) -> str:
     :param channel: Target publishing channel.
     :param arch: Target package architecture. Some older reference material calls this "subdir"
     :raises ApiException: If the target channel and architecture are not supported
-    :return: URL to the repodata JSON blob of interest.
+    :returns: URL to the repodata JSON blob of interest.
     """
     if channel not in _SUPPORTED_CHANNEL_ARCH:
         raise ApiException(f"Requested package channel is not supported: {channel}")
@@ -259,14 +262,63 @@ def _calc_request_url(channel: Channel, arch: Architecture) -> str:
     return f"{_BASE_REPODATA_URL}/{channel}/{arch}/repodata.json"
 
 
-def _serialize_repodata(response_json: JsonType) -> Repodata:
-    # Casts should be very safe as we must have passed JSON schema validation by this point.
-    # TODO complete
-    # TODO handle NULLable license fields
+def _serialize_repodata_metadata(obj: JsonObjectType) -> RepodataMetadata:
+    """
+    Serializes a JSON object to a RepodataMetadata instance. The JSON must have been previously validated.
+    :param obj: JSON object to parse
+    :returns: Constructed RepodataMetadata instance
+    """
+    return RepodataMetadata(
+        subdir=cast(str, obj["subdir"]),
+        arch=init_optional_str("arch", obj),
+        platform=init_optional_str("platform", obj),
+    )
 
-    metadata = RepodataMetadata("linux-64")
 
-    return Repodata(metadata, {}, cast(list[str], response_json["removed"]), int(response_json["repodata_version"]))
+def _serialize_package_data(obj: JsonObjectType) -> PackageData:
+    """
+    Serializes a JSON object to a PackageData instance. The JSON must have been previously validated.
+    :param obj: JSON object to parse
+    :returns: Constructed PackageData instance
+    """
+    return PackageData(
+        # Required fields
+        build=cast(str, obj["build"]),
+        build_number=cast(int, obj["build_number"]),
+        depends=cast(list[str], obj["depends"]),
+        md5=cast(str, obj["md5"]),
+        sha256=cast(str, obj["sha256"]),
+        name=cast(str, obj["name"]),
+        size=cast(int, obj["size"]),
+        version=cast(str, obj["version"]),
+        subdir=cast(str, obj["subdir"]),
+        # Optional fields
+        timestamp=init_optional_int("timestamp", obj),
+        date=init_optional_str("date", obj),
+        track_features=init_optional_str("track_features", obj),
+        # TODO handle NULLable license fields
+        license=init_optional_str("license", obj),
+        license_family=init_optional_str("license_family", obj),
+    )
+
+
+def _serialize_repodata(obj: JsonObjectType) -> Repodata:
+    """
+    Serializes a JSON object to a Repodata instance. The JSON must have been previously validated.
+    :param obj: JSON object to parse
+    :returns: Constructed Repodata instance
+    """
+    packages = cast(JsonObjectType, obj["packages"])
+    serialized_packages: dict[str, PackageData] = {}
+    for name, payload in packages.items():
+        serialized_packages[name] = _serialize_package_data(cast(JsonObjectType, payload))
+
+    return Repodata(
+        info=_serialize_repodata_metadata(cast(JsonObjectType, obj["info"])),
+        packages=serialized_packages,
+        removed=cast(list[str], obj["removed"]),
+        repodata_version=cast(int, obj["repodata_version"]),
+    )
 
 
 def fetch_repodata(channel: Channel, arch: Architecture) -> Repodata:
@@ -275,7 +327,7 @@ def fetch_repodata(channel: Channel, arch: Architecture) -> Repodata:
     :param channel: Target publishing channel.
     :param arch: Target package architecture. Some older reference material calls this "subdir"
     :raises ApiException: If the target channel and architecture are not supported or HTTP request failed.
-    :return: Serialized form of the `repodata.json` structure.
+    :returns: Serialized form of the `repodata.json` structure.
     """
     request_url: Final[str] = _calc_request_url(channel, arch)
     response_json: JsonType
@@ -288,4 +340,4 @@ def fetch_repodata(channel: Channel, arch: Architecture) -> Repodata:
     except BaseApiException as e:
         raise ApiException(e.message) from e
 
-    return _serialize_repodata(response_json)
+    return _serialize_repodata(cast(JsonObjectType, response_json))

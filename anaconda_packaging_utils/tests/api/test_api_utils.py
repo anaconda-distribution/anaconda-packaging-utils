@@ -9,10 +9,11 @@ from unittest.mock import patch
 
 import pytest
 
+from anaconda_packaging_utils.api import _utils
 from anaconda_packaging_utils.api._types import BaseApiException
-from anaconda_packaging_utils.api._utils import check_for_empty_field, make_request_and_validate
 from anaconda_packaging_utils.api.pypi_api import PackageInfo
 from anaconda_packaging_utils.tests.testing_utils import MOCK_BASE_URL, TEST_FILES_PATH, load_json_file
+from anaconda_packaging_utils.types import JsonObjectType
 
 TEST_PYPI_FILES: Final[str] = f"{TEST_FILES_PATH}/pypi_api"
 
@@ -28,7 +29,7 @@ def test_make_request_and_validate_get_package() -> None:
         mock_get.return_value.headers = {"content-type": "application/json"}
         mock_get.return_value.json.return_value = response_json
         assert (
-            make_request_and_validate(  # pylint: disable=protected-access
+            _utils.make_request_and_validate(  # pylint: disable=protected-access
                 f"{MOCK_BASE_URL}/scipy/json",
                 PackageInfo.get_schema(True),
             )
@@ -47,7 +48,7 @@ def test_make_request_and_validate_get_package_version() -> None:
         mock_get.return_value.headers = {"content-type": "application/json"}
         mock_get.return_value.json.return_value = response_json
         assert (
-            make_request_and_validate(  # pylint: disable=protected-access
+            _utils.make_request_and_validate(  # pylint: disable=protected-access
                 f"{MOCK_BASE_URL}/scipy/1.11.1/json",
                 PackageInfo.get_schema(False),
             )
@@ -66,7 +67,7 @@ def test_make_request_and_validate_bad_http_response() -> None:
         mock_get.return_value.headers = {"content-type": "application/json"}
         mock_get.return_value.json.return_value = load_json_file(f"{TEST_PYPI_FILES}/valid_get_package_version.json")
         with pytest.raises(BaseApiException):
-            make_request_and_validate(  # pylint: disable=protected-access
+            _utils.make_request_and_validate(  # pylint: disable=protected-access
                 f"{MOCK_BASE_URL}/scipy/1.11.1/json",
                 PackageInfo.get_schema(False),
             )
@@ -74,7 +75,7 @@ def test_make_request_and_validate_bad_http_response() -> None:
         # GET response is None
         mock_get.return_value = None
         with pytest.raises(BaseApiException):
-            make_request_and_validate(  # pylint: disable=protected-access
+            _utils.make_request_and_validate(  # pylint: disable=protected-access
                 f"{MOCK_BASE_URL}/scipy/1.11.1/json",
                 PackageInfo.get_schema(False),
             )
@@ -91,7 +92,7 @@ def test_make_request_and_validate_bad_http_content() -> None:
         mock_get.return_value.headers = {}
         mock_get.return_value.json.return_value = load_json_file(f"{TEST_PYPI_FILES}/valid_get_package_version.json")
         with pytest.raises(BaseApiException):
-            make_request_and_validate(  # pylint: disable=protected-access
+            _utils.make_request_and_validate(  # pylint: disable=protected-access
                 f"{MOCK_BASE_URL}/scipy/1.11.1/json",
                 PackageInfo.get_schema(False),
             )
@@ -99,7 +100,7 @@ def test_make_request_and_validate_bad_http_content() -> None:
         # Non-JSON content
         mock_get.return_value.headers = {"content-type": "text/html"}
         with pytest.raises(BaseApiException):
-            make_request_and_validate(  # pylint: disable=protected-access
+            _utils.make_request_and_validate(  # pylint: disable=protected-access
                 f"{MOCK_BASE_URL}/scipy/1.11.1/json",
                 PackageInfo.get_schema(False),
             )
@@ -108,7 +109,7 @@ def test_make_request_and_validate_bad_http_content() -> None:
         mock_get.return_value.headers = {"content-type": "application/json"}
         mock_get.return_value.json.return_value = "bad: json"
         with pytest.raises(BaseApiException):
-            make_request_and_validate(  # pylint: disable=protected-access
+            _utils.make_request_and_validate(  # pylint: disable=protected-access
                 f"{MOCK_BASE_URL}/scipy/1.11.1/json",
                 PackageInfo.get_schema(False),
             )
@@ -127,7 +128,7 @@ def test_make_request_and_validate_bad_schema() -> None:
         mock_get.return_value.headers = {"content-type": "application/json"}
         mock_get.return_value.json.return_value = response_json
         with pytest.raises(BaseApiException):
-            make_request_and_validate(  # pylint: disable=protected-access
+            _utils.make_request_and_validate(
                 f"{MOCK_BASE_URL}/scipy/json",
                 PackageInfo.get_schema(True),
             )
@@ -137,7 +138,22 @@ def test_check_for_empty_field() -> None:
     """
     Tests checking for empty JSON fields
     """
-    check_for_empty_field("Test", "foobar")  # pylint: disable=protected-access
+    _utils.check_for_empty_field("Test", "foobar")
     with pytest.raises(BaseApiException):
-        check_for_empty_field("Test", "")  # pylint: disable=protected-access
-        check_for_empty_field("Test", None)  # pylint: disable=protected-access
+        _utils.check_for_empty_field("Test", "")
+        _utils.check_for_empty_field("Test", None)
+
+
+def test_init_optional_str() -> None:
+    """
+    Tests optional casting wrapper
+    """
+    obj: Final[JsonObjectType] = {"foo": "bar"}
+    assert _utils.init_optional_str("foo", obj) == "bar"
+    assert _utils.init_optional_str("baz", obj) is None
+
+
+def test_init_optional_int() -> None:
+    obj: Final[JsonObjectType] = {"foo": 42}
+    assert _utils.init_optional_int("foo", obj) == 42
+    assert _utils.init_optional_int("baz", obj) is None

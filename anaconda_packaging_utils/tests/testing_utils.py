@@ -22,7 +22,7 @@ def load_json_file(file: Path | str) -> JsonType:
     This could be turned into a fixture, but `mypy` doesn't play nice with those decorators.
 
     :param file:    JSON filename of the file to read
-    :return: Parsed JSON read from the file
+    :returns: Parsed JSON read from the file
     """
     with open(Path(file), "r", encoding="utf-8") as f:
         j: JsonType = json.load(f)

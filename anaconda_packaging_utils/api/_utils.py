@@ -5,13 +5,13 @@ Description:    Contains private utilities used by the API module.
 
 import traceback
 from logging import Logger
-from typing import Optional
+from typing import Optional, cast
 
 import requests
 from jsonschema import validate as schema_validate
 
 from anaconda_packaging_utils.api._types import DEFAULT_HTTP_REQ_TIMEOUT, BaseApiException
-from anaconda_packaging_utils.types import JsonType, SchemaType
+from anaconda_packaging_utils.types import JsonObjectType, JsonType, SchemaType
 
 
 def make_request_and_validate(
@@ -73,3 +73,31 @@ def check_for_empty_field(field: str, value: str | None) -> None:
     """
     if value is None or len(value) == 0:
         raise BaseApiException(f"`{field}` field is empty: {value}")
+
+
+def init_optional_str(field: str, obj: JsonObjectType) -> Optional[str]:
+    """
+    Convenience type-safety function that reduces a JSON Type down to a known target type, if present. The JSON object
+    must have been previously validated for this to be safe to use.
+    TODO: make this and the other `init_optional_*` functions generic
+    :param field: Field to extract
+    :param obj: JSON object to extract a field from
+    :returns: The field, cast to a string. Otherwise, `None`.
+    """
+    if field not in obj:
+        return None
+    return cast(str, obj[field])
+
+
+def init_optional_int(field: str, obj: JsonObjectType) -> Optional[int]:
+    """
+    Convenience type-safety function that reduces a JSON Type down to a known target type, if present. The JSON object
+    must have been previously validated for this to be safe to use.
+    TODO: make this and the other `init_optional_*` functions generic
+    :param field: Field to extract
+    :param obj: JSON object to extract a field from
+    :returns: The field, cast to an int. Otherwise, `None`.
+    """
+    if field not in obj:
+        return None
+    return cast(int, obj[field])
