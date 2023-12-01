@@ -111,7 +111,79 @@ def test_package_data_lt_other_type(pd_lhs: repodata_api.PackageData) -> None:
     :param pd_lhs: `PackageData` instance on the left-hand-side of the equation
     """
     assert not pd_lhs < None  # type: ignore[misc]
+    assert not pd_lhs < 42  # type: ignore[misc]
     assert not pd_lhs < "blah"  # type: ignore[misc]
+
+
+@pytest.mark.parametrize(
+    "pd_lhs,pd_rhs,expected_bool",
+    [
+        (("foobar", "v0.1.0", 0), ("foobar", "v1.0.0", 0), False),
+        (("foobar", "v0.1.0", 0), ("foobar", "1.0.0", 0), False),
+        (("foobar", "v1.0.0", 0), ("foobar", "v1.0.1", 0), False),
+        (("foobar", "v1.0.0", 0), ("foobar", "v1.0.0", 1), False),
+        (("foobar", "v1.1.0", 0), ("baz", "v1.0.0", 0), False),
+        (("foobar", "v1.1.0", 0), ("foobar", "v1.0.0", 0), True),
+        (("foobar", "v0.1.1", 1), ("foobar", "v0.1.1", 0), True),
+        (("foobar", "v0.1.0", 0), ("foobar", "v0.1.0", 0), False),
+        (("foobar", "", 0), ("foobar", "v0.1.0", 0), False),
+    ],
+    indirect=True,
+)
+def test_package_data_gt(
+    pd_lhs: repodata_api.PackageData, pd_rhs: repodata_api.PackageData, expected_bool: bool
+) -> None:
+    """
+    Tests cases for the `PackageData` `>` operator
+    :param pd_lhs: `PackageData` instance on the left-hand-side of the equation
+    :param pd_rhs: `PackageData` instance on the right-hand-side of the equation
+    :param expected: Expected result of the comparison
+    """
+    assert (pd_lhs > pd_rhs) == expected_bool  # type: ignore[misc]
+
+
+@pytest.mark.parametrize(
+    "pd_lhs,pd_rhs,expected_bool",
+    [
+        (("foobar", "v0.1.0", 0), ("foobar", "v1.0.0", 0), False),
+        (("foobar", "v0.1.0", 0), ("foobar", "1.0.0", 0), False),
+        (("foobar", "v1.0.0", 0), ("foobar", "v1.0.1", 0), False),
+        (("foobar", "v1.0.0", 0), ("foobar", "v1.0.0", 1), False),
+        (("foobar", "v0.1.0", 0), ("baz", "v0.1.0", 0), False),
+        (("foobar", "v1.1.0", 0), ("foobar", "v1.0.0", 0), False),
+        (("foobar", "v0.1.1", 1), ("foobar", "v0.1.1", 0), False),
+        (("foobar", "v0.1.1", 1), ("foobar", "v0.1.1", 1), True),
+        (("foobar", "v0.1.0", 0), ("foobar", "v0.1.0", 0), True),
+        (("foobar", "", 0), ("foobar", "v0.1.0", 0), False),
+    ],
+    indirect=True,
+)
+def test_package_data_eq(
+    pd_lhs: repodata_api.PackageData, pd_rhs: repodata_api.PackageData, expected_bool: bool
+) -> None:
+    """
+    Tests cases for the `PackageData` `==` operator
+    :param pd_lhs: `PackageData` instance on the left-hand-side of the equation
+    :param pd_rhs: `PackageData` instance on the right-hand-side of the equation
+    :param expected: Expected result of the comparison
+    """
+    assert (pd_lhs == pd_rhs) == expected_bool
+
+
+@pytest.mark.parametrize(
+    "pd_lhs",
+    [
+        ("foobar", "v0.1.0", 0),
+    ],
+    indirect=True,
+)
+def test_package_data_eq_other_type(pd_lhs: repodata_api.PackageData) -> None:
+    """
+    Tests that `==` operator fails on comparisons to non-`PackageData` instances
+    :param pd_lhs: `PackageData` instance on the left-hand-side of the equation
+    """
+    assert not pd_lhs == 42  # type: ignore[comparison-overlap]
+    assert not pd_lhs == "blah"  # type: ignore[comparison-overlap]
 
 
 @no_type_check
