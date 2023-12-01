@@ -190,7 +190,7 @@ class PackageData:
     # TODO rm: Enforce type checking when this PR is released
     #   https://github.com/conda/conda/pull/13385
     @no_type_check
-    def __lt__(self, other: VersionOrder) -> bool:
+    def __lt__(self, other: object) -> bool:
         """
         Allows for version comparisons between two `PackageData` instances
         NOTE: We are relying on the default implementation of `__eq__()` for dataclasses, which checks that all fields
