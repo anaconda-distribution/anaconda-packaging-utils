@@ -7,7 +7,10 @@ Description:    Library that provides tooling for pulling and parsing `repodata.
 import logging
 from dataclasses import dataclass
 from enum import Enum
-from typing import Final, Optional, cast
+from typing import Final, Optional, cast, no_type_check
+
+from conda.exceptions import InvalidVersionSpec
+from conda.models.version import VersionOrder
 
 from anaconda_packaging_utils.api._types import BaseApiException
 from anaconda_packaging_utils.api._utils import init_optional_int, init_optional_str, make_request_and_validate
@@ -154,9 +157,9 @@ class RepodataMetadata:
     Metadata section in a `repodata.json` blob
     """
 
-    # Required fields
+    ## Required fields ##
     subdir: str
-    # Optional fields
+    ## Optional fields ##
     arch: Optional[str] = None
     platform: Optional[str] = None
 
@@ -167,7 +170,7 @@ class PackageData:
     Per-package data stored in a `repodata.json` blob
     """
 
-    # Required fields
+    ## Required fields ##
     build: str
     build_number: int
     depends: list[str]
@@ -177,12 +180,41 @@ class PackageData:
     size: int
     version: str
     subdir: str
-    # Optional fields
+    ## Optional fields ##
     timestamp: Optional[int] = None
     date: Optional[str] = None
     track_features: Optional[str] = None
     license: Optional[str] = None
     license_family: Optional[str] = None
+
+    # TODO rm: Enforce type checking when this PR is released
+    #   https://github.com/conda/conda/pull/13385
+    @no_type_check
+    def __lt__(self, other: VersionOrder) -> bool:
+        """
+        Allows for version comparisons between two `PackageData` instances
+        NOTE: We are relying on the default implementation of `__eq__()` for dataclasses, which checks that all fields
+              are equivalent.
+        NOTE: Type checking is disabled for this function as `VersionOrder`
+        :param other: Object to compare against this one.
+        :returns: If this instance has a lower version than the compared instance.
+        """
+        if not isinstance(other, PackageData):
+            return False
+        # Comparing versions between two different software projects/packages is meaningless.
+        if self.name != other.name:
+            return False
+        try:
+            self_v = VersionOrder(self.version)
+            other_v = VersionOrder(other.version)
+            # If two versions are equal, fallback to comparing the build number
+            if self_v == other_v:
+                return self.build_number < other.build_number
+            return self_v < other_v
+        except InvalidVersionSpec:
+            # If a `VersionOrder` object failed to be created, we are not able to accurately compare these objects.
+            pass
+        return False
 
 
 @dataclass
@@ -282,7 +314,7 @@ def _serialize_package_data(obj: JsonObjectType) -> PackageData:
     :returns: Constructed PackageData instance
     """
     return PackageData(
-        # Required fields
+        ## Required fields ##
         build=cast(str, obj["build"]),
         build_number=cast(int, obj["build_number"]),
         depends=cast(list[str], obj["depends"]),
@@ -292,7 +324,7 @@ def _serialize_package_data(obj: JsonObjectType) -> PackageData:
         size=cast(int, obj["size"]),
         version=cast(str, obj["version"]),
         subdir=cast(str, obj["subdir"]),
-        # Optional fields
+        ## Optional fields ##
         timestamp=init_optional_int("timestamp", obj),
         date=init_optional_str("date", obj),
         track_features=init_optional_str("track_features", obj),

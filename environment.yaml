@@ -21,6 +21,8 @@ dependencies:
   - requests
   - types-requests
   # Other
+  # TODO fix: Pin conda version when this PR gets released
+  #   https://github.com/conda/conda/pull/13385
   - conda
   - conda-build
   - pre-commit

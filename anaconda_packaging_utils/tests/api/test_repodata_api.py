@@ -15,6 +15,106 @@ TEST_REPODATA_FILES: Final[str] = f"{TEST_FILES_PATH}/repodata_api"
 
 
 @no_type_check
+@pytest.fixture(name="expected_bool")
+def fixture_expected_bool(request: pytest.FixtureRequest) -> bool:
+    """
+    Dummy fixture used to streamline unit testing
+    :param request: Pytest fixture request object
+      - param: Bool indicating if the test should assert on True or False
+    """
+    return request.param
+
+
+@no_type_check
+@pytest.fixture(name="pd_lhs")
+def fixture_pd_lhs(request: pytest.FixtureRequest) -> repodata_api.PackageData:
+    """
+    Constructs a `PackageData` instance of a package for the left-hand-side of a comparison
+    :param request: Pytest fixture request object
+      - param[0]: Name string to set
+      - param[1]: Version string to set
+      - param[2]: Build number integer to set
+    """
+    return repodata_api.PackageData(
+        build=f"{request.param[0]}-py39-noarch",
+        build_number=request.param[2],
+        depends=["baz"],
+        md5="d41d8cd98f00b204e9800998ecf8427e",
+        sha256="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        name=request.param[0],
+        size=42,
+        version=request.param[1],
+        subdir="noarch",
+    )
+
+
+@no_type_check
+@pytest.fixture(name="pd_rhs")
+def fixture_pd_rhs(request: pytest.FixtureRequest) -> repodata_api.PackageData:
+    """
+    Constructs a `PackageData` instance of a package for the right-hand-side of a comparison
+    :param request: Pytest fixture request object
+      - param[0]: Name string to set
+      - param[1]: Version string to set
+      - param[2]: Build number integer to set
+    """
+    return repodata_api.PackageData(
+        build=f"{request.param[0]}-py39-noarch",
+        build_number=request.param[2],
+        depends=["baz"],
+        md5="d41d8cd98f00b204e9800998ecf8427e",
+        sha256="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        name=request.param[0],
+        size=42,
+        version=request.param[1],
+        subdir="noarch",
+    )
+
+
+@pytest.mark.parametrize(
+    "pd_lhs,pd_rhs,expected_bool",
+    [
+        (("foobar", "v0.1.0", 0), ("foobar", "v1.0.0", 0), True),
+        (("foobar", "v0.1.0", 0), ("foobar", "1.0.0", 0), True),
+        (("foobar", "v1.0.0", 0), ("foobar", "v1.0.1", 0), True),
+        (("foobar", "v1.0.0", 0), ("foobar", "v1.0.0", 1), True),
+        (("foobar", "v0.1.0", 0), ("baz", "v1.0.0", 0), False),
+        (("foobar", "v1.1.0", 0), ("foobar", "v1.0.0", 0), False),
+        (("foobar", "v0.1.1", 1), ("foobar", "v0.1.1", 0), False),
+        (("foobar", "v0.1.0", 0), ("foobar", "v0.1.0", 0), False),
+        (("foobar", "", 0), ("foobar", "v0.1.0", 0), False),
+    ],
+    indirect=True,
+)
+def test_package_data_lt(
+    pd_lhs: repodata_api.PackageData, pd_rhs: repodata_api.PackageData, expected_bool: bool
+) -> None:
+    """
+    Tests cases for the `PackageData` `<` operator
+    :param pd_lhs: `PackageData` instance on the left-hand-side of the equation
+    :param pd_rhs: `PackageData` instance on the right-hand-side of the equation
+    :param expected: Expected result of the comparison
+    """
+    assert (pd_lhs < pd_rhs) == expected_bool  # type: ignore[misc]
+
+
+@pytest.mark.parametrize(
+    "pd_lhs",
+    [
+        ("foobar", "v0.1.0", 0),
+    ],
+    indirect=True,
+)
+def test_package_data_lt_other_type(pd_lhs: repodata_api.PackageData) -> None:
+    """
+    Tests that `<` operator fails on comparisons to non-`PackageData` instances
+    :param pd_lhs: `PackageData` instance on the left-hand-side of the equation
+    """
+    assert not pd_lhs < None  # type: ignore[misc]
+    assert not pd_lhs < "blah"  # type: ignore[misc]
+
+
+@no_type_check
 @pytest.mark.parametrize(
     "file",
     [
