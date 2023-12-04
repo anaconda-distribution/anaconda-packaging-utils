@@ -94,7 +94,7 @@ test:						## executes unit test cases
 	$(PYTHON3) -m pytest -n auto --capture=no anaconda_packaging_utils/tests/
 
 test-debug:		## runs test cases with debugging info enabled
-	$(PYTHON3) -m pytest -n auto -vv --capture=no tests/
+	$(PYTHON3) -m pytest -n auto -vv --capture=no anaconda_packaging_utils/tests/
 
 test-cov:					## checks test coverage requirements
 	$(PYTHON3) -m pytest -n auto --cov-config=.coveragerc --cov=anaconda_packaging_utils \

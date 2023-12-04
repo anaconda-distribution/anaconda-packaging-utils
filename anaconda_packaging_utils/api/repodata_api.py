@@ -26,7 +26,7 @@ from anaconda_packaging_utils.types import JsonObjectType, JsonType, SchemaType
 log = logging.getLogger(__name__)
 
 
-class Channel(str, Enum):
+class Channel(Enum):
     """
     Enumeration of channels supported on `repo.anaconda.com`
     """
@@ -40,7 +40,7 @@ class Channel(str, Enum):
     MSYS_2 = "msys2"
 
 
-class Architecture(str, Enum):
+class Architecture(Enum):
     """
     Enumeration of architectures supported on `repo.anaconda.com`
     """
@@ -62,86 +62,6 @@ class Architecture(str, Enum):
 
 _BASE_REPODATA_URL: Final[str] = "https://repo.anaconda.com/pkgs"
 
-# Maps the available architectures per channel hosted on `repo.anaconda.com`
-_SUPPORTED_CHANNEL_ARCH: Final[dict[Channel, set[Architecture]]] = {
-    Channel.MAIN: {
-        Architecture.LINUX_X86_64,
-        Architecture.LINUX_X86_32,
-        Architecture.LINUX_GRAVITON_2,
-        Architecture.LINUX_S390,
-        Architecture.LINUX_PPC64LE,
-        Architecture.OSX_X86_64,
-        Architecture.OSX_ARM64,
-        Architecture.WIN_64,
-        Architecture.WIN_32,
-        Architecture.NO_ARCH,
-    },
-    Channel.FREE: {
-        Architecture.LINUX_X86_64,
-        Architecture.LINUX_X86_32,
-        Architecture.LINUX_ARM_V6L,
-        Architecture.LINUX_ARM_V7L,
-        Architecture.LINUX_PPC64LE,
-        Architecture.OSX_X86_64,
-        Architecture.OSX_X86_32,
-        Architecture.WIN_64,
-        Architecture.WIN_32,
-        Architecture.NO_ARCH,
-    },
-    Channel.R: {
-        Architecture.LINUX_X86_64,
-        Architecture.LINUX_X86_32,
-        Architecture.LINUX_ARM_V6L,
-        Architecture.LINUX_ARM_V7L,
-        Architecture.LINUX_PPC64LE,
-        Architecture.OSX_X86_64,
-        Architecture.OSX_X86_32,
-        Architecture.WIN_64,
-        Architecture.WIN_32,
-        Architecture.NO_ARCH,
-    },
-    Channel.PRO: {
-        Architecture.LINUX_X86_64,
-        Architecture.LINUX_X86_32,
-        Architecture.LINUX_ARM_V6L,
-        Architecture.LINUX_ARM_V7L,
-        Architecture.LINUX_PPC64LE,
-        Architecture.OSX_X86_64,
-        Architecture.OSX_X86_32,
-        Architecture.WIN_64,
-        Architecture.WIN_32,
-        Architecture.NO_ARCH,
-    },
-    Channel.ARCHIVE: {
-        Architecture.LINUX_X86_64,
-        Architecture.LINUX_X86_32,
-        Architecture.LINUX_ARM_V6L,
-        Architecture.LINUX_ARM_V7L,
-        Architecture.LINUX_PPC64LE,
-        Architecture.OSX_X86_64,
-        Architecture.OSX_X86_32,
-        Architecture.WIN_64,
-        Architecture.WIN_32,
-        Architecture.NO_ARCH,
-    },
-    Channel.MRO_ARCHIVE: {
-        Architecture.LINUX_X86_64,
-        Architecture.LINUX_X86_32,
-        Architecture.LINUX_ARM_V6L,
-        Architecture.LINUX_ARM_V7L,
-        Architecture.LINUX_PPC64LE,
-        Architecture.OSX_X86_64,
-        Architecture.OSX_X86_32,
-        Architecture.WIN_64,
-        Architecture.WIN_32,
-        Architecture.NO_ARCH,
-    },
-    Channel.MSYS_2: {
-        Architecture.WIN_64,
-        Architecture.WIN_32,
-    },
-}
-
 
 class ApiException(BaseApiException):
     """
@@ -149,6 +69,18 @@ class ApiException(BaseApiException):
     """
 
     pass
+
+
+# Schema for the `channeldata.json` structure. As of writing, this only validates two fields of the data structure, as
+# we only use this JSON file to determine which architectures are supported per channel.
+_CHANNELDATA_JSON_SCHEMA: Final[SchemaType] = {
+    "type": "object",
+    "required": ["channeldata_version", "subdirs"],
+    "properties": {
+        "channeldata_version": {"type": "integer"},
+        "subdirs": {"type": "array", "items": {"type": "string"}},
+    },
+}
 
 
 @dataclass
@@ -281,17 +213,29 @@ _REPODATA_JSON_SCHEMA: Final[SchemaType] = {
 
 def _calc_request_url(channel: Channel, arch: Architecture) -> str:
     """
-    Calculates the URL to the target `repodata.json` blob.
+    Calculates the URL to the target `repodata.json` blob AND verifies if the requested architecture is supported on
+    the requested channel.
     :param channel: Target publishing channel.
     :param arch: Target package architecture. Some older reference material calls this "subdir"
     :raises ApiException: If the target channel and architecture are not supported
     :returns: URL to the repodata JSON blob of interest.
     """
-    if channel not in _SUPPORTED_CHANNEL_ARCH:
+    if channel not in set(Channel):
         raise ApiException(f"Requested package channel is not supported: {channel}")
-    if arch not in _SUPPORTED_CHANNEL_ARCH[channel]:
-        raise ApiException(f"Requested architecture `{arch}` is not supported by this channel: {channel}")
-    return f"{_BASE_REPODATA_URL}/{channel}/{arch}/repodata.json"
+
+    response_json: JsonType
+    try:
+        response_json = make_request_and_validate(
+            f"{_BASE_REPODATA_URL}/{channel.value}/channeldata.json",
+            _CHANNELDATA_JSON_SCHEMA,
+            log,
+        )
+    except BaseApiException as e:
+        raise ApiException(e.message) from e
+
+    if arch.value not in cast(list[str], cast(JsonObjectType, response_json)["subdirs"]):
+        raise ApiException(f"Requested architecture `{arch.value}` is not supported by this channel: {channel.value}")
+    return f"{_BASE_REPODATA_URL}/{channel.value}/{arch.value}/repodata.json"
 
 
 def _serialize_repodata_metadata(obj: JsonObjectType) -> RepodataMetadata:

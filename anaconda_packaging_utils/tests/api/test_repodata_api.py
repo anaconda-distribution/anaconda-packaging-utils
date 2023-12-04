@@ -2,16 +2,57 @@
 File:           test_repodata_api.py
 Description:    Tests the repodata API
 """
-from typing import Final, no_type_check
+from typing import Final, cast, no_type_check
 from unittest.mock import patch
 
 import pytest
 
 from anaconda_packaging_utils.api import repodata_api
 from anaconda_packaging_utils.api._utils import make_request_and_validate
-from anaconda_packaging_utils.tests.testing_utils import MOCK_BASE_URL, TEST_FILES_PATH, load_json_file
+from anaconda_packaging_utils.tests.testing_utils import (
+    MOCK_BASE_URL,
+    TEST_FILES_PATH,
+    MockHttpJsonResponse,
+    load_json_file,
+)
 
 TEST_REPODATA_FILES: Final[str] = f"{TEST_FILES_PATH}/repodata_api"
+
+
+def mock_requests_get(*args: tuple[str], **_: dict[str, str | int]) -> MockHttpJsonResponse:
+    """
+    Mocking function for HTTP requests made in this test file
+    :param args: Arguments passed to the `requests.get()`
+    :param _: Name-specified arguments passed to `requests.get()` (Unused)
+    """
+    known_endpoints: Final[dict[str, MockHttpJsonResponse]] = {
+        ## channeldata.json ##
+        "https://repo.anaconda.com/pkgs/main/channeldata.json": MockHttpJsonResponse(
+            200, json_file=f"{TEST_REPODATA_FILES}/channeldata_main.json"
+        ),
+        "https://repo.anaconda.com/pkgs/msys2/channeldata.json": MockHttpJsonResponse(
+            200, json_file=f"{TEST_REPODATA_FILES}/channeldata_msys2.json"
+        ),
+        # This channel is purposefully broken to test failure scenarios
+        "https://repo.anaconda.com/pkgs/archive/channeldata.json": MockHttpJsonResponse(500, json_data={}),
+        ## repodata.json ##
+        "https://repo.anaconda.com/pkgs/main/linux-64/repodata.json": MockHttpJsonResponse(
+            200, json_file=f"{TEST_REPODATA_FILES}/repodata_main_linux64_small.json"
+        ),
+        "https://repo.anaconda.com/pkgs/main/osx-64/repodata.json": MockHttpJsonResponse(
+            200, json_file=f"{TEST_REPODATA_FILES}/repodata_main_osx64.json"
+        ),
+        "https://repo.anaconda.com/pkgs/r/linux-ppc64le/repodata.json": MockHttpJsonResponse(
+            200, json_file=f"{TEST_REPODATA_FILES}/repodata_r_ppc64le.json"
+        ),
+        # This combination is purposefully broken to test failure scenarios
+        "https://repo.anaconda.com/pkgs/msys2/linux-32/repodata.json": MockHttpJsonResponse(500, json_data={}),
+    }
+
+    endpoint = cast(str, args[0])
+    if endpoint in known_endpoints:
+        return known_endpoints[endpoint]
+    return MockHttpJsonResponse(404)
 
 
 @no_type_check
@@ -201,6 +242,8 @@ def test_validate_repodata_schema(file: str) -> None:
     Validates the jsonschema representation of a `repodata.json` against several examples.
     This is intended to validate the schema format, not necessarily to test `make_request_and_validate()`
     """
+    # We deliberately do not use `mock_request_get()` in this test to ensure we can parse the small AND original
+    # `main_linux64` files.
     response_json = load_json_file(f"{TEST_REPODATA_FILES}/{file}")
     with patch("requests.get") as mock_get:
         mock_get.return_value.status_code = 200
@@ -217,11 +260,7 @@ def test_fetch_repodata_success() -> None:
     Tests the serialization of an entire `repodata.json` blob. We use a small fake `repodata.json` file for ease of
     validating against.
     """
-    response_json = load_json_file(f"{TEST_REPODATA_FILES}/repodata_main_linux64_smaller.json")
-    with patch("requests.get") as mock_get:
-        mock_get.return_value.status_code = 200
-        mock_get.return_value.headers = {"content-type": "application/json"}
-        mock_get.return_value.json.return_value = response_json
+    with patch("requests.get", new=mock_requests_get):
         assert repodata_api.fetch_repodata(
             repodata_api.Channel.MAIN, repodata_api.Architecture.LINUX_X86_64
         ) == repodata_api.Repodata(
@@ -311,20 +350,28 @@ def test_fetch_repodata_success() -> None:
 
 
 @no_type_check
-def test_fetch_repodata_failure() -> None:
+def test_fetch_repodata_bad_input() -> None:
     """
-    Tests failure scenarios of fetching a repo
+    Tests failure scenarios caused by bad user input
     """
-    with patch("requests.get") as mock_get:
-        mock_get.return_value.status_code = 200
-        mock_get.return_value.headers = {"content-type": "application/json"}
-        mock_get.return_value.json.return_value = {}
-        # Test bad JSON failure
-        with pytest.raises(repodata_api.ApiException):
-            repodata_api.fetch_repodata(repodata_api.Channel.MAIN, repodata_api.Architecture.LINUX_X86_64)
+    with patch("requests.get", new=mock_requests_get):
         # Test bad channel request
         with pytest.raises(repodata_api.ApiException):
             repodata_api.fetch_repodata("fake channel", repodata_api.Architecture.OSX_ARM64)
         # Test bad architecture on channel request
         with pytest.raises(repodata_api.ApiException):
             repodata_api.fetch_repodata(repodata_api.Channel.MSYS_2, repodata_api.Architecture.OSX_ARM64)
+
+
+@no_type_check
+def test_fetch_repodata_bad_json_response() -> None:
+    """
+    Tests failure scenario where the API replies with a bad JSON payload
+    """
+    with patch("requests.get", new=mock_requests_get):
+        # The archive channel is purposefully broken to simulate a `channeldata.json` HTTP server error
+        with pytest.raises(repodata_api.ApiException):
+            repodata_api.fetch_repodata(repodata_api.Channel.ARCHIVE, repodata_api.Architecture.LINUX_X86_64)
+        # msys2 + Linux x86 32-bit endpoint is a purposefully broken combination that simulates an HTTP server error
+        with pytest.raises(repodata_api.ApiException):
+            repodata_api.fetch_repodata(repodata_api.Channel.MSYS_2, repodata_api.Architecture.LINUX_X86_32)
