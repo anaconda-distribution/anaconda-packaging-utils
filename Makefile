@@ -94,11 +94,11 @@ test:						## executes unit test cases
 	$(PYTHON3) -m pytest -n auto --capture=no anaconda_packaging_utils/tests/
 
 test-debug:		## runs test cases with debugging info enabled
-	$(PYTHON3) -m pytest -n auto -vv --capture=no tests/
+	$(PYTHON3) -m pytest -n auto -vv --capture=no anaconda_packaging_utils/tests/
 
 test-cov:					## checks test coverage requirements
 	$(PYTHON3) -m pytest -n auto --cov-config=.coveragerc --cov=anaconda_packaging_utils \
-		anaconda_packaging_utils/tests/ --cov-fail-under=75 --cov-report term-missing
+		anaconda_packaging_utils/tests/ --cov-fail-under=80 --cov-report term-missing
 
 lint:						## runs the linter against the project
 	pylint --rcfile=.pylintrc anaconda_packaging_utils

@@ -6,28 +6,24 @@ Description:    Library that provides tooling for pulling information from the p
 """
 
 
-import dataclasses
 import datetime
 import logging
-import traceback
+from dataclasses import dataclass
 from typing import Final, no_type_check
 
-import requests
-from jsonschema import validate as schema_validate
-
 import anaconda_packaging_utils.cryptography.utils as crypto_utils
+from anaconda_packaging_utils.api._types import BaseApiException
+from anaconda_packaging_utils.api._utils import check_for_empty_field, make_request_and_validate
 from anaconda_packaging_utils.types import JsonType, SchemaType
 
 # Logging object for this module
 log = logging.getLogger(__name__)
 
 # Base URL that all endpoints use
-BASE_URL: Final[str] = "https://pypi.python.org/pypi"
-# Timeout of HTTP requests, in seconds
-HTTP_REQ_TIMEOUT: Final[int] = 60
+_BASE_URL: Final[str] = "https://pypi.python.org/pypi"
 
 
-@dataclasses.dataclass(frozen=True)
+@dataclass(frozen=True)
 class VersionMetadata:
     """
     Represents information stored in the object found in the "urls" or "releases/<version>" keys. This block contains
@@ -82,7 +78,7 @@ class VersionMetadata:
         }
 
 
-@dataclasses.dataclass(frozen=True)
+@dataclass(frozen=True)
 class PackageInfo:
     """
     Represents information stored in the "info"-keyed object found in both GET request types.
@@ -186,7 +182,7 @@ class PackageInfo:
         return base
 
 
-@dataclasses.dataclass
+@dataclass
 class PackageMetadata:
     """
     Class that represents all the metadata about a Package
@@ -196,21 +192,12 @@ class PackageMetadata:
     releases: dict[str, VersionMetadata]  # version -> metadata
 
 
-class ApiException(Exception):
+class ApiException(BaseApiException):
     """
-    Generic exception indicating an unrecoverable failure of this API.
-
-    This exception is meant to condense many possible failures into one generic error. The thinking is, if the calling
-    code runs into any API failure, there isn't much that can be done. So it is easier for the caller to handle one
-    exception than many exception types.
+    Indicates an exception occurred with this API.
     """
 
-    def __init__(self, message: str):
-        """
-        Constructs an API exception
-        :param message: String description of the issue encountered.
-        """
-        super().__init__(message if len(message) else "An unknown API issue was encountered.")
+    pass
 
 
 def _calc_package_metadata_url(package: str) -> str:
@@ -219,7 +206,7 @@ def _calc_package_metadata_url(package: str) -> str:
     :param package: Name of the package
     :returns: REST endpoint to use to fetch package metadata
     """
-    return f"{BASE_URL}/{package}/json"
+    return f"{_BASE_URL}/{package}/json"
 
 
 def _calc_package_version_metadata_url(package: str, version: str) -> str:
@@ -229,62 +216,7 @@ def _calc_package_version_metadata_url(package: str, version: str) -> str:
     :param version: Version of the package
     :returns: REST endpoint to use to fetch package metadata
     """
-    return f"{BASE_URL}/{package}/{version}/json"
-
-
-def _make_request_and_validate(endpoint: str, schema: SchemaType) -> JsonType:
-    """
-    Makes an HTTP request against the API and validates the result.
-    :param endpoint: REST endpoint (URL) used in this request
-    :param schema: JSON schema to validate the results against
-    :raises ApiException: If there is an unrecoverable issue with the API
-    """
-    response = None
-    try:
-        log.debug("Performing GET request on: %s", endpoint)
-        response = requests.get(endpoint, timeout=HTTP_REQ_TIMEOUT)
-    except Exception as e:
-        raise ApiException("GET request failed.") from e
-
-    # This should not be possible, but we'll guard against it anyways.
-    if response is None:
-        raise ApiException("HTTP response was never set.")
-
-    # Validate HTTP response
-    if response.status_code != 200:
-        raise ApiException(f"API returned a {response.status_code} HTTP status code")
-    if "content-type" not in response.headers:
-        raise ApiException("API returned with no `content-type` header.")
-    content_type = response.headers["content-type"]
-    if content_type != "application/json":
-        raise ApiException(f"API returned a non-JSON `content-type`: {content_type}")
-
-    # Validate JSON
-    response_json: JsonType = {}
-    try:
-        response_json = response.json()
-    except Exception as e:
-        raise ApiException("Failed to parse JSON response.") from e
-    try:
-        schema_validate(response_json, schema)
-    except Exception as e:
-        log.debug("Validation exception trace: %s", traceback.format_exc())
-        raise ApiException("Returned JSON does not match minimum schema.") from e
-
-    # TODO ensure that the package name matches the package name seen in the JSON response
-
-    return response_json
-
-
-def _check_for_empty_field(field: str, value: str | None) -> None:
-    """
-    Convenience function that checks if a critical field is empty/null
-    :param field: Field name (for debugging purposes)
-    :param value: Value of the field to check
-    :raises ApiException: If the field is empty
-    """
-    if value is None or len(value) == 0:
-        raise ApiException(f"`{field}` field is empty: {value}")
+    return f"{_BASE_URL}/{package}/{version}/json"
 
 
 def _parse_version_metadata(data: JsonType) -> VersionMetadata:
@@ -325,8 +257,11 @@ def _parse_version_metadata(data: JsonType) -> VersionMetadata:
         raise ApiException(f"VersionMetadata MD5 hash is invalid: {parsed.md5}")
     if not crypto_utils.is_valid_sha256(parsed.sha256):
         raise ApiException(f"VersionMetadata SHA-256 hash is invalid: {parsed.md5}")
-    _check_for_empty_field("VersionMetadata.filename", parsed.filename)
-    _check_for_empty_field("VersionMetadata.python_version", parsed.python_version)
+    try:
+        check_for_empty_field("VersionMetadata.filename", parsed.filename)
+        check_for_empty_field("VersionMetadata.python_version", parsed.python_version)
+    except BaseApiException as e:
+        raise ApiException(e.message) from e
 
     return parsed
 
@@ -382,12 +317,15 @@ def _parse_package_info(data: JsonType) -> PackageInfo:
     )
 
     # Validate the remaining critical values
-    _check_for_empty_field("PackageInfo.license", parsed.license)
-    _check_for_empty_field("PackageInfo.name", parsed.name)
-    _check_for_empty_field("PackageInfo.package_url", parsed.package_url)
-    _check_for_empty_field("PackageInfo.project_url", parsed.project_url)
-    _check_for_empty_field("PackageInfo.release_url", parsed.release_url)
-    _check_for_empty_field("PackageInfo.version", parsed.version)
+    try:
+        check_for_empty_field("PackageInfo.license", parsed.license)
+        check_for_empty_field("PackageInfo.name", parsed.name)
+        check_for_empty_field("PackageInfo.package_url", parsed.package_url)
+        check_for_empty_field("PackageInfo.project_url", parsed.project_url)
+        check_for_empty_field("PackageInfo.release_url", parsed.release_url)
+        check_for_empty_field("PackageInfo.version", parsed.version)
+    except BaseApiException as e:
+        raise ApiException(e.message) from e
 
     return parsed
 
@@ -398,10 +336,13 @@ def fetch_package_metadata(package: str) -> PackageMetadata:
     :param package: Name of the package
     :raises ApiException: If there is an unrecoverable issue with the API
     """
-    response_json = _make_request_and_validate(
-        _calc_package_metadata_url(package),
-        PackageInfo.get_schema(True),  # type: ignore[misc]
-    )
+    response_json: JsonType
+    try:
+        response_json = make_request_and_validate(
+            _calc_package_metadata_url(package), PackageInfo.get_schema(True), log  # type: ignore[misc]
+        )
+    except BaseApiException as e:
+        raise ApiException(e.message) from e
 
     info = _parse_package_info(response_json)
     # Pre-populate with the top-level "latest" release information that is guaranteed to be there. If the `releases`
@@ -454,10 +395,15 @@ def fetch_package_version_metadata(package: str, version: str) -> PackageMetadat
     :param version: Version of the package
     :raises ApiException: If there is an unrecoverable issue with the API
     """
-    response_json = _make_request_and_validate(
-        _calc_package_version_metadata_url(package, version),
-        PackageInfo.get_schema(False),  # type: ignore[misc]
-    )
+    response_json: JsonType
+    try:
+        response_json = make_request_and_validate(
+            _calc_package_version_metadata_url(package, version),
+            PackageInfo.get_schema(False),  # type: ignore[misc]
+            log,
+        )
+    except BaseApiException as e:
+        raise ApiException(e.message) from e
 
     info = _parse_package_info(response_json)
 

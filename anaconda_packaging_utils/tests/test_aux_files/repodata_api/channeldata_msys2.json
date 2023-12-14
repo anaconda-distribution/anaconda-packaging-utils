@@ -1,0 +1,6185 @@
+{
+  "channeldata_version": 1,
+  "packages": {
+    "autoconf": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/autoconf",
+      "license": "GPL, GPL2, GPL3, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/autoconf-2.69-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically configuring source code",
+      "text_prefix": false,
+      "version": "2.69"
+    },
+    "binutils": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/binutils/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-binutils-2.25.1-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A set of programs to assemble and manipulate binary and object files (mingw-w64)",
+      "text_prefix": false,
+      "version": "2.25.1"
+    },
+    "bwidget": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://core.tcl.tk/bwidget/home",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-bwidget-1.9.10-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A companion to Tcllib, for Tk related packages (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.9.10"
+    },
+    "bzip2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.bzip.org",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-bzip2-1.0.6-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A high-quality data compression program (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.0.6"
+    },
+    "c-ares": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://c-ares.haxx.se/",
+      "license": "MIT, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-c-ares-1.11.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "C library that performs DNS requests and name resolves asynchronously (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.11.0"
+    },
+    "ca-certificates": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://packages.qa.debian.org/c/ca-certificates.html",
+      "license": "MPL, GPL",
+      "post_link": true,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-ca-certificates-20150426-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Common CA certificates (mingw-w64)",
+      "text_prefix": false,
+      "version": "20150426"
+    },
+    "crt-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingw-w64.sourceforge.net",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-crt-git-5.0.0.4636.2595836-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MinGW-w64 CRT for Windows",
+      "text_prefix": false,
+      "version": "5.0.0.4636.2595836"
+    },
+    "curl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://curl.haxx.se",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-curl-7.48.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "An URL retrival utility and library. (mingw-w64)",
+      "text_prefix": false,
+      "version": "7.48.0"
+    },
+    "diffutils": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/diffutils",
+      "license": "GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "file:///C:/Users/ray/gd.cio/msys2/pkgs/mingw-w64-diffutils-3.3-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Diffutils is a package of several programs related to finding differences between files (mingw-w64)",
+      "text_prefix": false,
+      "version": "3.3.2"
+    },
+    "dlfcn": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "description": "dlfcn is a set of functions that allows runtime dynamic library loading. It is standardized in the POSIX. Windows also provide similar routines, but not in a POSIX-compatible way. This library attempts to implement a wrapper around the Windows functions to make programs written for POSIX that use dlfcn work in Windows without any modifications.",
+      "dev_url": "https://github.com/dlfcn-win32/dlfcn-win32",
+      "home": "https://github.com/dlfcn-win32/dlfcn-win32",
+      "license": "LGPL2.1",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "dlfcn-win32 is an implementation of dlfcn for Windows.",
+      "text_prefix": false,
+      "version": "1.1.1"
+    },
+    "dsdp": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.mcs.anl.gov/hs/software/DSDP",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-dsdp-5.8-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A free open source implementation of an interior-point method for semidefinite programming (mingw-w64)",
+      "text_prefix": false,
+      "version": "5.8"
+    },
+    "expat": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://expat.sourceforge.net",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-expat-2.1.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "An XML parser library (mingw-w64)",
+      "text_prefix": false,
+      "version": "2.1.1"
+    },
+    "fftw": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.fftw.org",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-fftw-3.3.4-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library for computing the discrete Fourier transform (DFT) (mingw-w64)",
+      "text_prefix": false,
+      "version": "3.3.4"
+    },
+    "flac": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://flac.sourceforge.net/",
+      "license": "custom:Xiph, LGPL, GPL, FDL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-flac-1.3.1-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Free Lossless Audio Codec (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.3.1"
+    },
+    "gcc": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL, LGPL, FDL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-gcc-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (C,C++,OpenMP) for MinGW-w64",
+      "text_prefix": false,
+      "version": "5.3.0"
+    },
+    "gcc-ada": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL, LGPL, FDL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gcc-ada-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (Ada) for MinGW-w64",
+      "text_prefix": false,
+      "version": "5.3.0"
+    },
+    "gcc-fortran": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL, LGPL, FDL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gcc-fortran-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (Fortran) for MinGW-w64",
+      "text_prefix": false,
+      "version": "5.3.0"
+    },
+    "gcc-libgfortran": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL, LGPL, FDL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gcc-libgfortran-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (libgfortran) for MinGW-w64",
+      "text_prefix": false,
+      "version": "5.3.0"
+    },
+    "gcc-libs": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL3+, partial:GCCRLE, partial:LGPL2+",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gcc-libs-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (libraries) for MinGW-w64",
+      "text_prefix": false,
+      "version": "5.3.0"
+    },
+    "gcc-libs-core": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL3+, partial:GCCRLE, partial:LGPL2+",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gcc-libs-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (core libraries) for MinGW-w64",
+      "text_prefix": false,
+      "version": "5.3.0"
+    },
+    "gcc-objc": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL, LGPL, FDL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gcc-objc-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (ObjC,Obj-C++) for MinGW-w64",
+      "text_prefix": false,
+      "version": "5.3.0"
+    },
+    "gettext": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/gettext/",
+      "license": "GPL3, partial:LGPL2.1",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-gettext-0.19.7-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU internationalization library (mingw-w64)",
+      "text_prefix": false,
+      "version": "0.19.7"
+    },
+    "glpk": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/glpk/glpk.html",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-glpk-4.61-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Linear Programming Kit, solve LP, MIP and other problems (mingw-w64)",
+      "text_prefix": false,
+      "version": "4.61"
+    },
+    "gmp": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://gmplib.org/",
+      "license": "LGPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-gmp-6.1.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A free library for arbitrary precision arithmetic (mingw-w64)",
+      "text_prefix": false,
+      "version": "6.1.0"
+    },
+    "gnutls": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnutls.org/",
+      "license": "GPL3, LGPL2.1",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gnutls-3.4.11-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library which provides a secure layer over a reliable transport layer (mingw-w64)",
+      "text_prefix": false,
+      "version": "3.4.11"
+    },
+    "grep": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/grep/",
+      "license": "GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "file:///C:/Users/ray/gd.cio/msys2/pkgs/mingw-w64-grep-2.24-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Grep searches one or more input files for lines containing a match to a specified pattern (mingw-w64)",
+      "text_prefix": false,
+      "version": "2.24"
+    },
+    "gsl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/gsl/gsl.html",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-gsl-2.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The GNU Scientific Library (GSL) is a modern numerical library for C and C++ programmers (mingw-w64)",
+      "text_prefix": false,
+      "version": "2.1"
+    },
+    "headers-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingw-w64.sourceforge.net",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-headers-git-5.0.0.4636.c0ad18a-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MinGW-w64 headers for Windows",
+      "text_prefix": false,
+      "version": "5.0.0.4636.c0ad18a"
+    },
+    "icu": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "description": "ICU is a mature, widely used set of C/C++ and Java libraries providing Unicode and Globalization support for software applications. ICU is widely portable and gives applications the same results on all platforms and between C/C++ and Java software.",
+      "dev_url": "http://source.icu-project.org/repos/icu/",
+      "doc_url": "http://site.icu-project.org/design",
+      "home": "http://site.icu-project.org/",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "International Components for Unicode.",
+      "text_prefix": false,
+      "version": "58.2"
+    },
+    "isl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://isl.gforge.inria.fr/",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-isl-0.16.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library for manipulating sets and relations of integer points bounded by linear constraints (mingw-w64)",
+      "text_prefix": false,
+      "version": "0.16.1"
+    },
+    "jansson": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.digip.org/jansson/",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-jansson-2.7-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A C library for encoding, decoding and manipulating JSON data (mingw-w64)",
+      "text_prefix": false,
+      "version": "2.7"
+    },
+    "libffi": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://sourceware.org/libffi",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libffi-3.2.1-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A portable, high level programming interface to various calling conventions (mingw-w64)",
+      "text_prefix": false,
+      "version": "3.2.1"
+    },
+    "libiconv": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/libiconv/",
+      "license": "LGPL2, documentation:GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libiconv-1.14-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Character encoding conversion library (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.14"
+    },
+    "libidn": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/libidn",
+      "license": "GPL3, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libidn-1.32-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Implementation of the Stringprep, Punycode and IDNA specifications (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.32"
+    },
+    "libjpeg-turbo": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://libjpeg-turbo.virtualgl.org",
+      "license": "custom:BSD-like",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libjpeg-turbo-1.4.2-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "JPEG image codec with accelerated baseline compression and decompression (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.4.2"
+    },
+    "libmangle-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingw-w64.sourceforge.net",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libmangle-git-5.0.0.4509.2e5a9a2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MinGW-w64 libmangle",
+      "text_prefix": false,
+      "version": "5.0.0.4509.2e5a9a2"
+    },
+    "libmetalink": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://launchpad.net/libmetalink",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libmetalink-0.1.3-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Metalink library (mingw-w64)",
+      "text_prefix": false,
+      "version": "0.1.3"
+    },
+    "libogg": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://xiph.org",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libogg-1.3.2-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Ogg bitstream and framing library (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.3.2"
+    },
+    "libpng": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.libpng.org/pub/png/libpng.html",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libpng-1.6.21-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A collection of routines used to create PNG format graphics (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.6.21"
+    },
+    "libsndfile": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.mega-nerd.com/libsndfile",
+      "license": "LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libsndfile-1.0.26-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A C library for reading and writing files containing sampled sound (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.0.26"
+    },
+    "libsodium": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://github.com/jedisct1/libsodium",
+      "license": "custom:ISC",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libsodium-1.0.10-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "P(ortable|ackageable) NaCl-based crypto library (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.0.10"
+    },
+    "libssh2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://libssh2.org",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libssh2-1.7.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library implementing the SSH2 protocol as defined by Internet Drafts (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.7.0"
+    },
+    "libsystre": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://sourceforge.net/projects/msys2/",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libsystre-1.0.1-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Wrapper library around TRE that provides POSIX API (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.0.1"
+    },
+    "libtasn1": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/libtasn1/",
+      "license": "GPL3, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libtasn1-4.7-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library for Abstract Syntax Notation One (ASN.1) and Distinguish Encoding Rules (DER) manipulation (mingw-w64)",
+      "text_prefix": false,
+      "version": "4.7"
+    },
+    "libtiff": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.remotesensing.org/libtiff",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libtiff-4.0.6-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library for manipulation of TIFF images (mingw-w64)",
+      "text_prefix": false,
+      "version": "4.0.6"
+    },
+    "libtre-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://github.com/laurikari/tre",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libtre-git-r122.c2f5d13-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The approximate regex matching library and agrep command line tool (mingw-w64)",
+      "text_prefix": false,
+      "version": "122.c2f5d13"
+    },
+    "libvorbis": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://xiph.org",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libvorbis-1.3.5-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Vorbis codec library (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.3.5"
+    },
+    "libwinpthread-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingw-w64.sourceforge.net",
+      "license": "MIT, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-winpthreads-git-5.0.0.4634.697f757-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MinGW-w64 winpthreads library",
+      "text_prefix": false,
+      "version": "5.0.0.4634.697f757"
+    },
+    "libxml2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.xmlsoft.org/",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libxml2-2.9.3-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "XML parsing library, version 2 (mingw-w64)",
+      "text_prefix": false,
+      "version": "2.9.3"
+    },
+    "m2-autoconf": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/autoconf",
+      "license": "GPL, GPL2, GPL3, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/autoconf-2.69-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically configuring source code",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.69"
+    },
+    "m2-autoconf2.13": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/autoconf",
+      "license": "GPL, GPL2, GPL3, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/autoconf2.13-2.13-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically configuring source code",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.13"
+    },
+    "m2-autogen": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://autogen.sourceforge.net/",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/autogen-5.18.4-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A tool designed to simplify the creation and maintenance of programs that contain large amounts of repetitious text",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.18.4"
+    },
+    "m2-automake-wrapper": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gentoo.org",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/automake-wrapper-10-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Wrapper scripts for automake and aclocal",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "10"
+    },
+    "m2-automake1.10": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/automake",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/automake1.10-1.10.3-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically creating Makefiles",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.10.3"
+    },
+    "m2-automake1.11": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/automake",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/automake1.11-1.11.6-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically creating Makefiles",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.11.6"
+    },
+    "m2-automake1.12": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/automake",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/automake1.12-1.12.6-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically creating Makefiles",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.12.6"
+    },
+    "m2-automake1.13": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/automake",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/automake1.13-1.13.4-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically creating Makefiles",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.13.4"
+    },
+    "m2-automake1.14": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/automake",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/automake1.14-1.14.1-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically creating Makefiles",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.14.1"
+    },
+    "m2-automake1.15": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/automake",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/automake1.15-1.15-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically creating Makefiles",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.15"
+    },
+    "m2-automake1.6": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/automake",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/automake1.6-1.6.3-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically creating Makefiles",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.6.3"
+    },
+    "m2-automake1.7": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/automake",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/automake1.7-1.7.9-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically creating Makefiles",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.7.9"
+    },
+    "m2-automake1.8": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/automake",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/automake1.8-1.8.5-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically creating Makefiles",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.8.5"
+    },
+    "m2-automake1.9": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/automake",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/automake1.9-1.9.6-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A GNU tool for automatically creating Makefiles",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.9.6"
+    },
+    "m2-base": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "post_link": true,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "text_prefix": false,
+      "timestamp": 1554152784,
+      "version": "1.0.0"
+    },
+    "m2-bash": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/bash/bash.html",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/bash-4.3.042-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The GNU Bourne Again shell",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.3.042"
+    },
+    "m2-bash-completion": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://bash-completion.alioth.debian.org/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/bash-completion-2.3-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Programmable completion for the bash shell",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.3"
+    },
+    "m2-bison": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/bison/bison.html",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/bison-3.0.4-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The GNU general-purpose parser generator",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.0.4"
+    },
+    "m2-bzip2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://sources.redhat.com/bzip2",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/bzip2-1.0.6-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A high-quality data compression program",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.0.6"
+    },
+    "m2-ca-certificates": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.mozilla.org/projects/security/certs/",
+      "license": "MPL, GPL",
+      "post_link": true,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/ca-certificates-20150426-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Common CA certificates",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "20150426"
+    },
+    "m2-catgets": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/libc/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/catgets-1.1-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "catgets message catalog API",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.1"
+    },
+    "m2-coreutils": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/coreutils",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/coreutils-8.25-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The basic file, shell and text manipulation utilities of the GNU operating system",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "8.25"
+    },
+    "m2-curl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://curl.haxx.se",
+      "license": "GPL, MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/curl-7.47.1-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Multi-protocol file transfer utility",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "7.47.1"
+    },
+    "m2-dash": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://gondor.apana.org.au/~herbert/dash/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/dash-0.5.8-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A POSIX compliant shell that aims to be as small as possible",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.5.8"
+    },
+    "m2-db": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.oracle.com/technology/software/products/berkeley-db/index.html",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/db-5.3.28-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The Berkeley DB embedded database system",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.3.28"
+    },
+    "m2-diffstat": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://invisible-island.net/diffstat",
+      "license": "GPL, MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/diffstat-1.58-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Display a histogram of diff changes",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.58"
+    },
+    "m2-diffutils": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/diffutils",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/diffutils-3.3-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Utility programs used for creating patch files",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.3"
+    },
+    "m2-dos2unix": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://waterlan.home.xs4all.nl/dos2unix.html",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/dos2unix-7.3.3-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Text file format converter",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "7.3.3"
+    },
+    "m2-expat": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://expat.sourceforge.net/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/expat-2.1.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "An XML parser library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.1.1"
+    },
+    "m2-file": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.darwinsys.com/file/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/file-5.25-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "File type identification utility",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.25"
+    },
+    "m2-filesystem": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://sourceforge.net/projects/msys2/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/filesystem-2016.04-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Base filesystem",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2016.04"
+    },
+    "m2-findutils": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/findutils",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/findutils-4.6.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU utilities to locate files",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.6.0"
+    },
+    "m2-flex": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://flex.sourceforge.net",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/flex-2.6.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A tool for generating text-scanning programs",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.6.0"
+    },
+    "m2-gawk": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/gawk/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/gawk-4.1.3-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU version of awk",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.1.3"
+    },
+    "m2-gcc-libs": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://gcc.gnu.org",
+      "license": "GPL, LGPL, FDL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/gcc-libs-5.3.0-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Runtime libraries shipped by GCC",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.3.0"
+    },
+    "m2-gdbm": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/gdbm/gdbm.html",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/gdbm-1.11-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU database library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.11"
+    },
+    "m2-gettext": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/gettext/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/gettext-0.19.7-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU internationalization library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.19.7"
+    },
+    "m2-gettext-devel": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/gettext/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/gettext-devel-0.19.7-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Internationalization development utilities",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.19.7"
+    },
+    "m2-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://git-scm.com/",
+      "license": "GPL, GPL2",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/git-2.8.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The fast distributed version control system",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.8.1"
+    },
+    "m2-glib2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gtk.org/",
+      "license": "GPL, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/glib2-2.48.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Common C routines used by GTK+ and other libs",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.48.0"
+    },
+    "m2-gmp": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gmplib.org/",
+      "license": "GPL, LGPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/gmp-6.1.0-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A free library for arbitrary precision arithmetic",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.1.0"
+    },
+    "m2-gnupg": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gnupg.org/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/gnupg-1.4.20-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Complete and free implementation of the OpenPGP standard",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.4.20"
+    },
+    "m2-gperf": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/gperf/",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/gperf-3.0.4-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Perfect hash function generator",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.0.4"
+    },
+    "m2-grep": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/grep/grep.html",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/grep-2.22-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A string search utility",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.22"
+    },
+    "m2-groff": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/groff/groff.html",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/groff-1.22.3-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU troff text-formatting system",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.22.3"
+    },
+    "m2-gzip": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/gzip/",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/gzip-1.7-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU compression utility",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.7"
+    },
+    "m2-heimdal": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.h5l.org/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/heimdal-1.5.3-9.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Implementation of Kerberos V5 libraries",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.5.3"
+    },
+    "m2-heimdal-libs": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.h5l.org/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/heimdal-libs-1.5.3-9.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Implementation of Kerberos V5 libraries",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.5.3"
+    },
+    "m2-help2man": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/help2man/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/help2man-1.47.3-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Conversion tool to create man files",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.47.3"
+    },
+    "m2-icu": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.icu-project.org/",
+      "license": "GPL, custom:\"icu\"",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/icu-56.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "International Components for Unicode library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "56.1"
+    },
+    "m2-inetutils": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/inetutils/",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/inetutils-1.9.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A collection of common network programs.",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.9.2"
+    },
+    "m2-info": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/texinfo/",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/info-6.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Utilities to work with and produce manuals, ASCII text, and on-line documentation from a single source file",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.0"
+    },
+    "m2-intltool": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://edge.launchpad.net/intltool",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/intltool-0.51.0-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The internationalization tool collection",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.51.0"
+    },
+    "m2-less": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.greenwoodsoftware.com/less",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/less-481-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A terminal based program for viewing text files",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "481"
+    },
+    "m2-libarchive": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://libarchive.org/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libarchive-3.1.2-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "library that can create and read several streaming archive formats",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.1.2"
+    },
+    "m2-libasprintf": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/gettext/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libasprintf-0.19.7-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "C-style formatted output in C++ (runtime)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.19.7"
+    },
+    "m2-libbz2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://sources.redhat.com/bzip2",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libbz2-1.0.6-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A high-quality data compression program",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.0.6"
+    },
+    "m2-libcatgets": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/libc/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libcatgets-1.1-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "catgets message catalog API",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.1"
+    },
+    "m2-libcrypt": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://cygwin.com/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libcrypt-1.3-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Encryption/Decryption utility and library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.3"
+    },
+    "m2-libcurl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://curl.haxx.se",
+      "license": "GPL, MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libcurl-7.47.1-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Multi-protocol file transfer library (runtime)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "7.47.1"
+    },
+    "m2-libdb": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.oracle.com/technology/software/products/berkeley-db/index.html",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libdb-5.3.28-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The Berkeley DB embedded database system",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.3.28"
+    },
+    "m2-libedit": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.thrysoee.dk/editline/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libedit-3.1-20150325.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Libedit is an autotool- and libtoolized port of the NetBSD Editline library.",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.1"
+    },
+    "m2-libexpat": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://expat.sourceforge.net/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libexpat-2.1.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "An XML parser library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.1.1"
+    },
+    "m2-libffi": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://sourceware.org/libffi/",
+      "license": "GPL, MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libffi-3.2.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Portable, high level programming interface to various calling conventions",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.2.1"
+    },
+    "m2-libgc": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.hpl.hp.com/personal/Hans_Boehm/gc/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libgc-7.2.d-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A garbage collector for C and C++",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "7.2.d"
+    },
+    "m2-libgcrypt": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnupg.org",
+      "license": "GPL, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libgcrypt-1.6.4-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "General purpose cryptographic library based on the code from GnuPG",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.6.4"
+    },
+    "m2-libgdbm": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/gdbm/gdbm.html",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libgdbm-1.11-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU database library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.11"
+    },
+    "m2-libgettextpo": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/gettext/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libgettextpo-0.19.7-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Internationalization runtime library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.19.7"
+    },
+    "m2-libgpg-error": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnupg.org",
+      "license": "GPL, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libgpg-error-1.21-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Support library for libgcrypt",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.21"
+    },
+    "m2-libguile": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/guile/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libguile-2.0.11-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "a portable, embeddable Scheme implementation written in C",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.0.11"
+    },
+    "m2-libiconv": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/libiconv/",
+      "license": "GPL, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libiconv-1.14-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Libiconv is a conversion library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.14"
+    },
+    "m2-libiconv-devel": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/libiconv/",
+      "license": "GPL, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libiconv-devel-1.14-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "libiconv headers and libraries",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.14"
+    },
+    "m2-libidn": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/libidn/",
+      "license": "GPL, GPL3, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libidn-1.32-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Implementation of the Stringprep, Punycode and IDNA specifications",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.32"
+    },
+    "m2-libintl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/gettext/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libintl-0.19.7-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Internationalization runtime library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.19.7"
+    },
+    "m2-libltdl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/libtool",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libltdl-2.4.6-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A system independent dlopen wrapper for GNU libtool",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.4.6"
+    },
+    "m2-liblzma": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://tukaani.org/xz/",
+      "license": "GPL, LGPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/liblzma-5.2.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library for XZ and LZMA compressed files",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.2.2"
+    },
+    "m2-liblzo2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.oberhumer.com/opensource/lzo",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/liblzo2-2.09-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Portable lossless data compression library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.09"
+    },
+    "m2-libmetalink": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://launchpad.net/libmetalink",
+      "license": "GPL, MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libmetalink-0.1.2-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Metalink XML parser library.",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.1.2"
+    },
+    "m2-libnettle": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.lysator.liu.se/~nisse/nettle/",
+      "license": "GPL, GPL2",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libnettle-3.1.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A low-level cryptographic library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.1.1"
+    },
+    "m2-libopenssl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.openssl.org",
+      "license": "GPL, custom:BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libopenssl-1.0.2.g-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The Open Source toolkit for Secure Sockets Layer and Transport Layer Security",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.0.2.g"
+    },
+    "m2-libp11-kit": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://p11-glue.freedesktop.org",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libp11-kit-0.23.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library to work with PKCS#11 modules",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.23.2"
+    },
+    "m2-libpcre": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.pcre.org/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libpcre-8.38-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library that implements Perl 5-style regular expressions",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "8.38"
+    },
+    "m2-libpcre16": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.pcre.org/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libpcre16-8.38-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library that implements Perl 5-style regular expressions",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "8.38"
+    },
+    "m2-libpcre32": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.pcre.org/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libpcre32-8.38-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library that implements Perl 5-style regular expressions",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "8.38"
+    },
+    "m2-libpcrecpp": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.pcre.org/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libpcrecpp-8.38-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library that implements Perl 5-style regular expressions",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "8.38"
+    },
+    "m2-libpcreposix": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.pcre.org/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libpcreposix-8.38-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library that implements Perl 5-style regular expressions",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "8.38"
+    },
+    "m2-libpipeline": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://libpipeline.nongnu.org/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libpipeline-1.4.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "a C library for manipulating pipelines of subprocesses in a flexible and convenient way",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.4.0"
+    },
+    "m2-libreadline": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://tiswww.case.edu/php/chet/readline/rltop.html",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libreadline-6.3.008-7.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU readline library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.3.008"
+    },
+    "m2-libsqlite": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.sqlite.org/",
+      "license": "GPL, PublicDomain",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libsqlite-3.10.0.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Sqlite3 library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.10.0.0"
+    },
+    "m2-libssh2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.libssh2.org/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libssh2-1.6.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Multi-protocol file transfer library (runtime)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.6.0"
+    },
+    "m2-libtasn1": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/libtasn1/",
+      "license": "GPL, GPL3, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libtasn1-4.7-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library for Abstract Syntax Notation One (ASN.1) and Distinguish Encoding Rules (DER) manipulation.",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.7"
+    },
+    "m2-libtool": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/libtool",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libtool-2.4.6-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A generic library support script",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.4.6"
+    },
+    "m2-libunistring": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/libunistring/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libunistring-0.9.6-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library for manipulating Unicode strings and C strings.",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.9.6"
+    },
+    "m2-libutil-linux": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.kernel.org/pub/linux/utils/util-linux/",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libutil-linux-2.26.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Block device ID and Universally Unique ID libraries",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.26.2"
+    },
+    "m2-libxml2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.xmlsoft.org/",
+      "license": "GPL, MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/libxml2-2.9.2-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "XML parsing library, version 2",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.9.2"
+    },
+    "m2-libxslt": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://xmlsoft.org/XSLT/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/libxslt-1.1.28-7.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "XML stylesheet transformation library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.1.28"
+    },
+    "m2-m4": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/m4",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/m4-1.4.17-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The GNU macro processor",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.4.17"
+    },
+    "m2-make": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/make",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/make-4.1-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU make utility to maintain groups of programs",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.1"
+    },
+    "m2-man-db": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.nongnu.org/man-db/",
+      "license": "GPL, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/man-db-2.7.4-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A utility for reading man pages",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.7.4"
+    },
+    "m2-mintty": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://mintty.github.io",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/mintty-1~2.2.3-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Terminal emulator with native Windows look and feel",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1!2.2.3"
+    },
+    "m2-mpfr": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.mpfr.org/",
+      "license": "GPL, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/mpfr-3.1.4-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Multiple-precision floating-point library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.1.4"
+    },
+    "m2-msys2-keyring": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://github.com/Alexpux/MSYS2-keyring",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/msys2-keyring-r9.397a52e-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MSYS2 PGP keyring",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "9.397a52e"
+    },
+    "m2-msys2-launcher-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://sourceforge.net/projects/msys2/",
+      "license": "GPL, MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/msys2-launcher-git-0.3.28.860c495-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Helper for launching MSYS2 shells",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.3.28.860c495"
+    },
+    "m2-msys2-runtime": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://sourceforge.net/projects/msys2/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/msys2-runtime-2.5.0.17080.65c939c-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Posix emulation engine for Windows",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.5.0.17080.65c939c"
+    },
+    "m2-ncurses": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/ncurses/",
+      "license": "GPL, MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/ncurses-6.0.20160220-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "System V Release 4.0 curses emulation library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.0.20160220"
+    },
+    "m2-openssh": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.openssh.org/portable.html",
+      "license": "GPL, custom:BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/openssh-7.1p2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Free version of the SSH connectivity tools",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "7.1p2"
+    },
+    "m2-openssl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.openssl.org",
+      "license": "GPL, custom:BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/openssl-1.0.2.g-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The Open Source toolkit for Secure Sockets Layer and Transport Layer Security",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.0.2.g"
+    },
+    "m2-p11-kit": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://p11-glue.freedesktop.org",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/p11-kit-0.23.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library to work with PKCS#11 modules",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.23.2"
+    },
+    "m2-p7zip": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://p7zip.sourceforge.net/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/p7zip-9.38.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Command-line version of the 7zip compressed file archiver",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "9.38.1"
+    },
+    "m2-patch": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/patch/patch.html",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/patch-2.7.5-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A utility to apply patch files to original sources",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.7.5"
+    },
+    "m2-patchutils": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://cyberelk.net/tim/software/patchutils/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/patchutils-0.3.3-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Utilities to work with patches",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.3.3"
+    },
+    "m2-pcre": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.pcre.org/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/pcre-8.38-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library that implements Perl 5-style regular expressions",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "8.38"
+    },
+    "m2-perl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.perl.org",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/perl-5.22.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A highly capable, feature-rich programming language",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.22.1"
+    },
+    "m2-perl-authen-sasl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/Authen-SASL/",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-Authen-SASL-2.16-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Perl/CPAN Module Authen::SASL : SASL authentication framework",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.16"
+    },
+    "m2-perl-convert-binhex": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/Convert-BinHex/",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/perl-Convert-BinHex-1.123-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Perl module to extract data from Macintosh BinHex files",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.123"
+    },
+    "m2-perl-encode-locale": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/Encode-Locale",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/perl-Encode-Locale-1.04-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Determine the locale encoding",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.04"
+    },
+    "m2-perl-error": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/Error/",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-Error-0.17024-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Perl/CPAN Error module - Error/exception handling in an OO-ish way",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.17024"
+    },
+    "m2-perl-file-listing": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/File-Listing",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-File-Listing-6.04-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "parse directory listing",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.04"
+    },
+    "m2-perl-html-parser": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/HTML-Parser/",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-HTML-Parser-3.71-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Perl HTML parser class",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.71"
+    },
+    "m2-perl-html-tagset": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/HTML-Tagset/",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-HTML-Tagset-3.20-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Data tables useful in parsing HTML",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.20"
+    },
+    "m2-perl-http-cookies": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/HTTP-Cookies",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/perl-HTTP-Cookies-6.01-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "HTTP cookie jars",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.01"
+    },
+    "m2-perl-http-daemon": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/HTTP-Daemon",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/perl-HTTP-Daemon-6.01-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A simple http server class",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.01"
+    },
+    "m2-perl-http-date": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/HTTP-Date",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-HTTP-Date-6.02-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Date conversion routines",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.02"
+    },
+    "m2-perl-http-message": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/HTTP-Message",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-HTTP-Message-6.06-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "HTTP style messages",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.06"
+    },
+    "m2-perl-http-negotiate": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/HTTP-Negotiate",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/perl-HTTP-Negotiate-6.01-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "choose a variant to serve",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.01"
+    },
+    "m2-perl-io-socket-ssl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/IO-Socket-SSL/",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-IO-Socket-SSL-2.016-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Nearly transparent SSL encapsulation for IO::Socket::INET",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.016"
+    },
+    "m2-perl-io-stringy": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/IO-stringy",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/perl-IO-stringy-2.111-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "I/O on in-core objects like strings/arrays",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.111"
+    },
+    "m2-perl-libwww": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://metacpan.org/release/libwww-perl",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-libwww-6.13-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The World-Wide Web library for Perl",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.13"
+    },
+    "m2-perl-locale-gettext": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/gettext/",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-Locale-Gettext-1.05-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Permits access from Perl to the gettext() family of functions",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.05"
+    },
+    "m2-perl-lwp-mediatypes": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://metacpan.org/release/LWP-MediaTypes",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/perl-LWP-MediaTypes-6.02-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Guess the media type of a file or a URL",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.02"
+    },
+    "m2-perl-mailtools": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://metacpan.org/release/MailTools",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-MailTools-2.14-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Various e-mail related modules",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.14"
+    },
+    "m2-perl-mime-tools": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/MIME-tools",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-MIME-tools-5.506-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Parses streams to create MIME entities",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.506"
+    },
+    "m2-perl-net-http": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/Net-HTTP",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/perl-Net-HTTP-6.09-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Low-level HTTP connection (client)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.09"
+    },
+    "m2-perl-net-smtp-ssl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/Net-SMTP-SSL/",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-Net-SMTP-SSL-1.02-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "SSL support for Net::SMTP",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.02"
+    },
+    "m2-perl-net-ssleay": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/Net-SSLeay/",
+      "license": "GPL, custom:BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-Net-SSLeay-1.72-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Perl extension for using OpenSSL",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.72"
+    },
+    "m2-perl-termreadkey": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/~jstowe/TermReadKey/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-TermReadKey-2.33-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Provides simple control over terminal driver modes",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.33"
+    },
+    "m2-perl-timedate": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/TimeDate/",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-TimeDate-2.30-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Date formating subroutines",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.30"
+    },
+    "m2-perl-uri": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/URI/",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/perl-URI-1.68-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Uniform Resource Identifiers (absolute and relative)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.68"
+    },
+    "m2-perl-www-robotrules": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://metacpan.org/release/WWW-RobotRules",
+      "license": "PerlArtistic, GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/perl-WWW-RobotRules-6.02-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Database of robots.txt-derived permissions",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.02"
+    },
+    "m2-perl-xml-parser": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://search.cpan.org/dist/XML-Parser/",
+      "license": "GPL, PerlArtistic",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/perl-XML-Parser-2.44-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Expat-based XML parser module for perl",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.44"
+    },
+    "m2-pkg-config": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.freedesktop.org/wiki/Software/pkg-config/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/pkg-config-0.29.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A system for managing library compile/link flags",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.29.1"
+    },
+    "m2-rebase": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.cygwin.com/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/rebase-4.4.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The Cygwin rebase distribution contains four utilities, rebase, rebaseall, peflags, and peflagsall.",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.4.2"
+    },
+    "m2-sed": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/sed",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/sed-4.2.2-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU stream editor",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.2.2"
+    },
+    "m2-tar": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/tar/tar.html",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/tar-1.28-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Utility used to store, backup, and transport files",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.28"
+    },
+    "m2-texinfo": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/texinfo/",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/texinfo-6.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Utilities to work with and produce manuals, ASCII text, and on-line documentation from a single source file",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.0"
+    },
+    "m2-texinfo-tex": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/texinfo/",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/texinfo-tex-6.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Utilities to work with and produce manuals, ASCII text, and on-line documentation from a single source file",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.0"
+    },
+    "m2-tftp-hpa": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.kernel.org/pub/software/network/tftp/tftp-hpa/",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/tftp-hpa-5.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Official tftp server",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.2"
+    },
+    "m2-time": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/directory/time.html",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/time-1.7-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Utility for monitoring a program's use of system resources",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.7"
+    },
+    "m2-ttyrec": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://0xcc.net/ttyrec/index.html.en",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/ttyrec-1.0.8-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A tty recorder",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.0.8"
+    },
+    "m2-tzcode": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.iana.org/time-zones",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/tzcode-2015.e-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Sources for time zone and daylight saving time data",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2015.e"
+    },
+    "m2-unzip": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.info-zip.org/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/unzip-6.0-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Unpacks .zip archives such as those made by PKZIP",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.0"
+    },
+    "m2-util-linux": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.kernel.org/pub/linux/utils/util-linux/",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/util-linux-2.26.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Collection of basic system utilities",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.26.2"
+    },
+    "m2-vim": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.vim.org",
+      "license": "GPL, custom:vim",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/vim-7.4.1721-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "null",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "7.4.1721"
+    },
+    "m2-which": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.xs4all.nl/~carlo17/which",
+      "license": "GPL, GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/which-2.21-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A utility to show the full path of commands",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.21"
+    },
+    "m2-xz": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://tukaani.org/xz/",
+      "license": "GPL, LGPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/msys/sources/xz-5.2.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library and command line tools for XZ and LZMA compressed files",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.2.2"
+    },
+    "m2-zip": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.info-zip.org/Zip.html",
+      "license": "GPL, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/zip-3.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Creates PKZIP-compatible .zip files",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.0"
+    },
+    "m2-zlib": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.zlib.net/",
+      "license": "GPL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/msys/sources/zlib-1.2.8-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Compression library implementing the deflate compression method found in gzip and PKZIP",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.2.8"
+    },
+    "m2w64-binutils": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/binutils/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-binutils-2.25.1-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A set of programs to assemble and manipulate binary and object files (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.25.1"
+    },
+    "m2w64-bwidget": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://core.tcl.tk/bwidget/home",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-bwidget-1.9.10-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A companion to Tcllib, for Tk related packages (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.9.10"
+    },
+    "m2w64-bzip2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.bzip.org",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-bzip2-1.0.6-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A high-quality data compression program (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.0.6"
+    },
+    "m2w64-c-ares": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://c-ares.haxx.se/",
+      "license": "MIT, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-c-ares-1.11.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "C library that performs DNS requests and name resolves asynchronously (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.11.0"
+    },
+    "m2w64-ca-certificates": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://packages.qa.debian.org/c/ca-certificates.html",
+      "license": "MPL, GPL",
+      "post_link": true,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-x86_64-ca-certificates-20150426-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Common CA certificates (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 1551457468,
+      "version": "20150426"
+    },
+    "m2w64-crt-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingw-w64.sourceforge.net",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-crt-git-5.0.0.4636.2595836-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MinGW-w64 CRT for Windows",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.0.0.4636.2595836"
+    },
+    "m2w64-curl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://curl.haxx.se",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-curl-7.48.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "An URL retrival utility and library. (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "7.48.0"
+    },
+    "m2w64-diffutils": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/diffutils",
+      "license": "GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "file:///C:/Users/ray/gd.cio/msys2/pkgs/mingw-w64-diffutils-3.3-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Diffutils is a package of several programs related to finding differences between files (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.3.2"
+    },
+    "m2w64-dlfcn": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "description": "dlfcn is a set of functions that allows runtime dynamic library loading. It is standardized in the POSIX. Windows also provide similar routines, but not in a POSIX-compatible way. This library attempts to implement a wrapper around the Windows functions to make programs written for POSIX that use dlfcn work in Windows without any modifications.",
+      "dev_url": "https://github.com/dlfcn-win32/dlfcn-win32",
+      "home": "https://github.com/dlfcn-win32/dlfcn-win32",
+      "license": "LGPL2.1",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "dlfcn-win32 is an implementation of dlfcn for Windows.",
+      "text_prefix": false,
+      "timestamp": 1513748725,
+      "version": "1.1.1"
+    },
+    "m2w64-dsdp": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.mcs.anl.gov/hs/software/DSDP",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-dsdp-5.8-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A free open source implementation of an interior-point method for semidefinite programming (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.8"
+    },
+    "m2w64-expat": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://expat.sourceforge.net",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-expat-2.1.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "An XML parser library (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.1.1"
+    },
+    "m2w64-fftw": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.fftw.org",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-fftw-3.3.4-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library for computing the discrete Fourier transform (DFT) (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.3.4"
+    },
+    "m2w64-flac": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://flac.sourceforge.net/",
+      "license": "custom:Xiph, LGPL, GPL, FDL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-flac-1.3.1-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Free Lossless Audio Codec (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.3.1"
+    },
+    "m2w64-gcc": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL, LGPL, FDL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gcc-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (C,C++,OpenMP) for MinGW-w64",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.3.0"
+    },
+    "m2w64-gcc-ada": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL, LGPL, FDL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-gcc-ada-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (Ada) for MinGW-w64",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.3.0"
+    },
+    "m2w64-gcc-fortran": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL, LGPL, FDL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gcc-fortran-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (Fortran) for MinGW-w64",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.3.0"
+    },
+    "m2w64-gcc-libgfortran": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL, LGPL, FDL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gcc-libgfortran-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (libgfortran) for MinGW-w64",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.3.0"
+    },
+    "m2w64-gcc-libs": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL3+, partial:GCCRLE, partial:LGPL2+",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-gcc-libs-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (libraries) for MinGW-w64",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.3.0"
+    },
+    "m2w64-gcc-libs-core": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL3+, partial:GCCRLE, partial:LGPL2+",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gcc-libs-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (core libraries) for MinGW-w64",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.3.0"
+    },
+    "m2w64-gcc-objc": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://gcc.gnu.org",
+      "license": "GPL, LGPL, FDL, custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-gcc-objc-5.3.0-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Compiler Collection (ObjC,Obj-C++) for MinGW-w64",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.3.0"
+    },
+    "m2w64-gettext": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/gettext/",
+      "license": "GPL3, partial:LGPL2.1",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gettext-0.19.7-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU internationalization library (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.19.7"
+    },
+    "m2w64-glpk": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/glpk/glpk.html",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-glpk-4.61-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU Linear Programming Kit, solve LP, MIP and other problems (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.61"
+    },
+    "m2w64-gmp": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://gmplib.org/",
+      "license": "LGPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-gmp-6.1.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A free library for arbitrary precision arithmetic (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.1.0"
+    },
+    "m2w64-gnutls": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnutls.org/",
+      "license": "GPL3, LGPL2.1",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-gnutls-3.4.11-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library which provides a secure layer over a reliable transport layer (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.4.11"
+    },
+    "m2w64-grep": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/grep/",
+      "license": "GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "file://C:/Users/ray/gd.cio/msys2/pkgs/mingw-w64-grep-2.24-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Grep searches one or more input files for lines containing a match to a specified pattern (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.24"
+    },
+    "m2w64-gsl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/gsl/gsl.html",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-gsl-2.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The GNU Scientific Library (GSL) is a modern numerical library for C and C++ programmers (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.1"
+    },
+    "m2w64-headers-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingw-w64.sourceforge.net",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-headers-git-5.0.0.4636.c0ad18a-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MinGW-w64 headers for Windows",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.0.0.4636.c0ad18a"
+    },
+    "m2w64-icu": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "description": "ICU is a mature, widely used set of C/C++ and Java libraries providing Unicode and Globalization support for software applications. ICU is widely portable and gives applications the same results on all platforms and between C/C++ and Java software.",
+      "dev_url": "http://source.icu-project.org/repos/icu/",
+      "doc_url": "http://site.icu-project.org/design",
+      "home": "http://site.icu-project.org/",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "International Components for Unicode.",
+      "text_prefix": false,
+      "timestamp": 1508068932,
+      "version": "58.2"
+    },
+    "m2w64-isl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://isl.gforge.inria.fr/",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-isl-0.16.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library for manipulating sets and relations of integer points bounded by linear constraints (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.16.1"
+    },
+    "m2w64-jansson": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.digip.org/jansson/",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-jansson-2.7-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A C library for encoding, decoding and manipulating JSON data (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.7"
+    },
+    "m2w64-libffi": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://sourceware.org/libffi",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libffi-3.2.1-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A portable, high level programming interface to various calling conventions (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.2.1"
+    },
+    "m2w64-libiconv": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/libiconv/",
+      "license": "LGPL2, documentation:GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libiconv-1.14-5.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Character encoding conversion library (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.14"
+    },
+    "m2w64-libidn": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.gnu.org/software/libidn",
+      "license": "GPL3, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libidn-1.32-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Implementation of the Stringprep, Punycode and IDNA specifications (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.32"
+    },
+    "m2w64-libjpeg-turbo": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://libjpeg-turbo.virtualgl.org",
+      "license": "custom:BSD-like",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libjpeg-turbo-1.4.2-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "JPEG image codec with accelerated baseline compression and decompression (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.4.2"
+    },
+    "m2w64-libmangle-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingw-w64.sourceforge.net",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libmangle-git-5.0.0.4509.2e5a9a2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MinGW-w64 libmangle",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.0.0.4509.2e5a9a2"
+    },
+    "m2w64-libmetalink": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://launchpad.net/libmetalink",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libmetalink-0.1.3-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Metalink library (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.1.3"
+    },
+    "m2w64-libogg": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://xiph.org",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libogg-1.3.2-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Ogg bitstream and framing library (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.3.2"
+    },
+    "m2w64-libpng": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.libpng.org/pub/png/libpng.html",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libpng-1.6.21-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A collection of routines used to create PNG format graphics (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.6.21"
+    },
+    "m2w64-libsndfile": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.mega-nerd.com/libsndfile",
+      "license": "LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libsndfile-1.0.26-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A C library for reading and writing files containing sampled sound (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.0.26"
+    },
+    "m2w64-libsodium": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://github.com/jedisct1/libsodium",
+      "license": "custom:ISC",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libsodium-1.0.10-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "P(ortable|ackageable) NaCl-based crypto library (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.0.10"
+    },
+    "m2w64-libssh2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://libssh2.org",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libssh2-1.7.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library implementing the SSH2 protocol as defined by Internet Drafts (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.7.0"
+    },
+    "m2w64-libsystre": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://sourceforge.net/projects/msys2/",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libsystre-1.0.1-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Wrapper library around TRE that provides POSIX API (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.0.1"
+    },
+    "m2w64-libtasn1": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/libtasn1/",
+      "license": "GPL3, LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libtasn1-4.7-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library for Abstract Syntax Notation One (ASN.1) and Distinguish Encoding Rules (DER) manipulation (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.7"
+    },
+    "m2w64-libtiff": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.remotesensing.org/libtiff",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libtiff-4.0.6-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library for manipulation of TIFF images (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.0.6"
+    },
+    "m2w64-libtre-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://github.com/laurikari/tre",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libtre-git-r122.c2f5d13-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The approximate regex matching library and agrep command line tool (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "122.c2f5d13"
+    },
+    "m2w64-libvorbis": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://xiph.org",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-libvorbis-1.3.5-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Vorbis codec library (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.3.5"
+    },
+    "m2w64-libwinpthread-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingw-w64.sourceforge.net",
+      "license": "MIT, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-winpthreads-git-5.0.0.4634.697f757-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MinGW-w64 winpthreads library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.0.0.4634.697f757"
+    },
+    "m2w64-libxml2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.xmlsoft.org/",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-libxml2-2.9.3-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "XML parsing library, version 2 (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.9.3"
+    },
+    "m2w64-make": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/make",
+      "license": "GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-make-4.1.2351.a80a8b8-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU make utility to maintain groups of programs (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.1.2351.a80a8b8"
+    },
+    "m2w64-metis": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://glaros.dtc.umn.edu/gkhome/views/metis",
+      "license": "Apache",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-metis-5.1.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Serial Graph Partitioning and Fill-reducing Matrix Ordering (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.1.0"
+    },
+    "m2w64-mpc": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.multiprecision.org",
+      "license": "LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-mpc-1.0.3-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Multiple precision complex arithmetic library (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.0.3"
+    },
+    "m2w64-mpfr": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.mpfr.org/",
+      "license": "LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-mpfr-3.1.4-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Multiple-precision floating-point library (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.1.4"
+    },
+    "m2w64-nettle": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.lysator.liu.se/~nisse/nettle",
+      "license": "LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-nettle-3.1.1-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A low-level cryptographic library (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "3.1.1"
+    },
+    "m2w64-nghttp2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://nghttp2.org/",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-nghttp2-1.9.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Framing layer of HTTP/2 is implemented as a reusable C library (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.9.2"
+    },
+    "m2w64-nlopt": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://ab-initio.mit.edu/wiki/index.php/NLopt",
+      "license": "LGPLv2.1+",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-nlopt-2.4.2-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library for nonlinear optimization (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.4.2"
+    },
+    "m2w64-ntldd-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://github.com/LRN/ntldd",
+      "license": "GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-ntldd-git-r15.e7622f6-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Tracks dependencides in Windows PE binaries (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "15.e7622f6"
+    },
+    "m2w64-openblas": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.openblas.net/",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-OpenBLAS-0.2.19-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "An optimized BLAS library based on GotoBLAS2 1.13 BSD, providing optimized blas, lapack, and cblas (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.2.19"
+    },
+    "m2w64-openssl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.openssl.org",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-openssl-1.0.2.g-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The Open Source toolkit for Secure Sockets Layer and Transport Layer Security (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.0.2.g"
+    },
+    "m2w64-p11-kit": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://p11-glue.freedesktop.org",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-p11-kit-0.23.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library to work with PKCS#11 modules",
+      "text_prefix": false,
+      "timestamp": 1551455858,
+      "version": "0.23.2"
+    },
+    "m2w64-pcre": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://pcre.org",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-pcre-8.38-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library that implements Perl 5-style regular expressions (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "8.38"
+    },
+    "m2w64-pkg-config": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.freedesktop.org/wiki/Software/pkg-config/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-pkg-config-0.29.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A system for managing library compile/link flags (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "0.29.1"
+    },
+    "m2w64-rtmpdump-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://rtmpdump.mplayerhq.hu/",
+      "license": "GPL2, LGPL2.1",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-rtmpdump-git-r499.a107cef-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A tool to download rtmp streams (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "499.a107cef"
+    },
+    "m2w64-speex": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.speex.org/",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-speex-1.2rc2-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A free codec for free speech (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.2rc2"
+    },
+    "m2w64-speexdsp": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.speex.org/",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-speexdsp-1.2rc3-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "DSP library derived from Speex (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.2rc3"
+    },
+    "m2w64-suitesparse": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://faculty.cse.tamu.edu/davis/suitesparse.html",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-suitesparse-4.5.5-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A suite of sparse matrix algorithms (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.5.5"
+    },
+    "m2w64-tcl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://tcl.sourceforge.net",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-tcl-8.6.5-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The Tcl scripting language (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "8.6.5"
+    },
+    "m2w64-tk": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://tcl.sourceforge.net",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-tk-8.6.5-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A windowing toolkit for use with tcl (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "8.6.5"
+    },
+    "m2w64-tktable": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://tktable.sourceforge.net/",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-tktable-2.10-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A full-featured 2D table widget for Tk (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.10"
+    },
+    "m2w64-toolchain": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.3.0"
+    },
+    "m2w64-tools-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingw-w64.sourceforge.net",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-tools-git-5.0.0.4592.90b8472-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MinGW-w64 tools",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.0.0.4592.90b8472"
+    },
+    "m2w64-udunits2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.unidata.ucar.edu/software/udunits/",
+      "license": "UCAR OSI approved",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_git_url": "C:\\Users\\rdonnelly\\conda\\anaconda\\packages\\udunits2\\https:\\github.com\\Unidata\\UDUNITS-2",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The UDUNITS package supports units of physical quantities.",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.2.25"
+    },
+    "m2w64-windows-default-manifest": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://cygwin.com/",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-windows-default-manifest-6.4-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Default Windows application manifest (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "6.4"
+    },
+    "m2w64-wineditline": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingweditline.sourceforge.net",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-wineditline-2.101-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "port of the NetBSD Editline library (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "2.101"
+    },
+    "m2w64-winpthreads-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingw-w64.sourceforge.net",
+      "license": "MIT, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-winpthreads-git-5.0.0.4634.697f757-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MinGW-w64 winpthreads library",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.0.0.4634.697f757"
+    },
+    "m2w64-xz": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://tukaani.org/xz",
+      "license": "partial:PublicDomain, partial:LGPL2.1+, partial:GPL2+",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-xz-5.2.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library and command line tools for XZ and LZMA compressed files (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "5.2.2"
+    },
+    "m2w64-zeromq": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.zeromq.org",
+      "license": "LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-zeromq-4.1.4-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Fast messaging system built on sockets, C and C++ bindings. aka 0MQ, ZMQ (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "4.1.4"
+    },
+    "m2w64-zlib": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.zlib.net/",
+      "license": "ZLIB",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-zlib-1.2.8-9.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Compression library implementing the deflate compression method found in gzip and PKZIP (mingw-w64)",
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.2.8"
+    },
+    "make": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.gnu.org/software/make",
+      "license": "GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-make-4.1.2351.a80a8b8-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "GNU make utility to maintain groups of programs (mingw-w64)",
+      "text_prefix": false,
+      "version": "4.1.2351.a80a8b8"
+    },
+    "metis": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://glaros.dtc.umn.edu/gkhome/views/metis",
+      "license": "Apache",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-metis-5.1.0-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Serial Graph Partitioning and Fill-reducing Matrix Ordering (mingw-w64)",
+      "text_prefix": false,
+      "version": "5.1.0"
+    },
+    "mpc": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.multiprecision.org",
+      "license": "LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-mpc-1.0.3-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Multiple precision complex arithmetic library (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.0.3"
+    },
+    "mpfr": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.mpfr.org/",
+      "license": "LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-mpfr-3.1.4-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Multiple-precision floating-point library (mingw-w64)",
+      "text_prefix": false,
+      "version": "3.1.4"
+    },
+    "msys2-conda-epoch": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "20160418"
+    },
+    "nettle": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.lysator.liu.se/~nisse/nettle",
+      "license": "LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-nettle-3.1.1-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A low-level cryptographic library (mingw-w64)",
+      "text_prefix": false,
+      "version": "3.1.1"
+    },
+    "nghttp2": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://nghttp2.org/",
+      "license": "MIT",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-nghttp2-1.9.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Framing layer of HTTP/2 is implemented as a reusable C library (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.9.2"
+    },
+    "nlopt": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://ab-initio.mit.edu/wiki/index.php/NLopt",
+      "license": "LGPLv2.1+",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-nlopt-2.4.2-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library for nonlinear optimization (mingw-w64)",
+      "text_prefix": false,
+      "version": "2.4.2"
+    },
+    "ntldd-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://github.com/LRN/ntldd",
+      "license": "GPL3",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-ntldd-git-r15.e7622f6-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Tracks dependencides in Windows PE binaries (mingw-w64)",
+      "text_prefix": false,
+      "version": "15.e7622f6"
+    },
+    "openblas": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.openblas.net/",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-OpenBLAS-0.2.19-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "An optimized BLAS library based on GotoBLAS2 1.13 BSD, providing optimized blas, lapack, and cblas (mingw-w64)",
+      "text_prefix": false,
+      "version": "0.2.19"
+    },
+    "openssl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.openssl.org",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-openssl-1.0.2.g-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The Open Source toolkit for Secure Sockets Layer and Transport Layer Security (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.0.2.g"
+    },
+    "p11-kit": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://p11-glue.freedesktop.org",
+      "license": "BSD",
+      "post_link": true,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-p11-kit-0.23.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library to work with PKCS#11 modules",
+      "text_prefix": false,
+      "version": "0.23.2"
+    },
+    "pcre": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://pcre.org",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-pcre-8.38-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A library that implements Perl 5-style regular expressions (mingw-w64)",
+      "text_prefix": false,
+      "version": "8.38"
+    },
+    "pkg-config": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "https://www.freedesktop.org/wiki/Software/pkg-config/",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-pkg-config-0.29.1-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A system for managing library compile/link flags (mingw-w64)",
+      "text_prefix": false,
+      "version": "0.29.1"
+    },
+    "posix": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "text_prefix": false,
+      "timestamp": 0,
+      "version": "1.0.0"
+    },
+    "rtmpdump-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://rtmpdump.mplayerhq.hu/",
+      "license": "GPL2, LGPL2.1",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-rtmpdump-git-r499.a107cef-3.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A tool to download rtmp streams (mingw-w64)",
+      "text_prefix": false,
+      "version": "499.a107cef"
+    },
+    "speex": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.speex.org/",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-speex-1.2rc2-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A free codec for free speech (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.2rc2"
+    },
+    "speexdsp": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.speex.org/",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-speexdsp-1.2rc3-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "DSP library derived from Speex (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.2rc3"
+    },
+    "suitesparse": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://faculty.cse.tamu.edu/davis/suitesparse.html",
+      "license": "GPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-suitesparse-4.5.5-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A suite of sparse matrix algorithms (mingw-w64)",
+      "text_prefix": false,
+      "version": "4.5.5"
+    },
+    "tcl": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://tcl.sourceforge.net",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-tcl-8.6.5-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "The Tcl scripting language (mingw-w64)",
+      "text_prefix": false,
+      "version": "8.6.5"
+    },
+    "tk": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://tcl.sourceforge.net",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-tk-8.6.5-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A windowing toolkit for use with tcl (mingw-w64)",
+      "text_prefix": false,
+      "version": "8.6.5"
+    },
+    "tktable": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://tktable.sourceforge.net/",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-tktable-2.10-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "A full-featured 2D table widget for Tk (mingw-w64)",
+      "text_prefix": false,
+      "version": "2.10"
+    },
+    "toolchain": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "text_prefix": false,
+      "version": "5.3.0"
+    },
+    "tools-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingw-w64.sourceforge.net",
+      "license": "custom",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-tools-git-5.0.0.4592.90b8472-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MinGW-w64 tools",
+      "text_prefix": false,
+      "version": "5.0.0.4592.90b8472"
+    },
+    "windows-default-manifest": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://cygwin.com/",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-windows-default-manifest-6.4-2.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Default Windows application manifest (mingw-w64)",
+      "text_prefix": false,
+      "version": "6.4"
+    },
+    "wineditline": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingweditline.sourceforge.net",
+      "license": "BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-wineditline-2.101-4.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "port of the NetBSD Editline library (mingw-w64)",
+      "text_prefix": false,
+      "version": "2.101"
+    },
+    "winpthreads-git": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://mingw-w64.sourceforge.net",
+      "license": "MIT, BSD",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-winpthreads-git-5.0.0.4634.697f757-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "MinGW-w64 winpthreads library",
+      "text_prefix": false,
+      "version": "5.0.0.4634.697f757"
+    },
+    "xz": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://tukaani.org/xz",
+      "license": "partial:PublicDomain, partial:LGPL2.1+, partial:GPL2+",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://msys2-sources.continuum.io/msys2-sources/mingw/sources/mingw-w64-xz-5.2.2-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Library and command line tools for XZ and LZMA compressed files (mingw-w64)",
+      "text_prefix": false,
+      "version": "5.2.2"
+    },
+    "zeromq": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.zeromq.org",
+      "license": "LGPL",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-zeromq-4.1.4-1.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Fast messaging system built on sockets, C and C++ bindings. aka 0MQ, ZMQ (mingw-w64)",
+      "text_prefix": false,
+      "version": "4.1.4"
+    },
+    "zlib": {
+      "activate.d": false,
+      "binary_prefix": false,
+      "deactivate.d": false,
+      "home": "http://www.zlib.net/",
+      "license": "ZLIB",
+      "post_link": false,
+      "pre_link": false,
+      "pre_unlink": false,
+      "run_exports": {},
+      "source_url": "http://repo.msys2.org/mingw/sources/mingw-w64-zlib-1.2.8-9.src.tar.gz",
+      "subdirs": [
+        "win-32",
+        "win-64"
+      ],
+      "summary": "Compression library implementing the deflate compression method found in gzip and PKZIP (mingw-w64)",
+      "text_prefix": false,
+      "version": "1.2.8"
+    }
+  },
+  "subdirs": [
+    "linux-32",
+    "linux-64",
+    "linux-armv6l",
+    "linux-ppc64le",
+    "noarch",
+    "osx-64",
+    "win-32",
+    "win-64",
+    "zos-z"
+  ]
+}
